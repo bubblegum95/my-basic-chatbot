@@ -1,0 +1,443 @@
+[
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPAuthorizationCredentials",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPBearer",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "HTTP_401_UNAUTHORIZED",
+        "importPath": "starlette.status",
+        "description": "starlette.status",
+        "isExtraImport": true,
+        "detail": "starlette.status",
+        "documentation": {}
+    },
+    {
+        "label": "AuthService",
+        "importPath": "src.services.auth_service",
+        "description": "src.services.auth_service",
+        "isExtraImport": true,
+        "detail": "src.services.auth_service",
+        "documentation": {}
+    },
+    {
+        "label": "AuthService",
+        "importPath": "src.services.auth_service",
+        "description": "src.services.auth_service",
+        "isExtraImport": true,
+        "detail": "src.services.auth_service",
+        "documentation": {}
+    },
+    {
+        "label": "AuthService",
+        "importPath": "src.services.auth_service",
+        "description": "src.services.auth_service",
+        "isExtraImport": true,
+        "detail": "src.services.auth_service",
+        "documentation": {}
+    },
+    {
+        "label": "Type",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "importPath": "tortoise",
+        "description": "tortoise",
+        "isExtraImport": true,
+        "detail": "tortoise",
+        "documentation": {}
+    },
+    {
+        "label": "fields",
+        "importPath": "tortoise",
+        "description": "tortoise",
+        "isExtraImport": true,
+        "detail": "tortoise",
+        "documentation": {}
+    },
+    {
+        "label": "Tortoise",
+        "importPath": "tortoise",
+        "description": "tortoise",
+        "isExtraImport": true,
+        "detail": "tortoise",
+        "documentation": {}
+    },
+    {
+        "label": "pydantic_model_creator",
+        "importPath": "tortoise.contrib.pydantic",
+        "description": "tortoise.contrib.pydantic",
+        "isExtraImport": true,
+        "detail": "tortoise.contrib.pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "PydanticModel",
+        "importPath": "tortoise.contrib.pydantic.base",
+        "description": "tortoise.contrib.pydantic.base",
+        "isExtraImport": true,
+        "detail": "tortoise.contrib.pydantic.base",
+        "documentation": {}
+    },
+    {
+        "label": "Users",
+        "importPath": "src.models.users_model",
+        "description": "src.models.users_model",
+        "isExtraImport": true,
+        "detail": "src.models.users_model",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "src.middlewares.jwt_middleware",
+        "description": "src.middlewares.jwt_middleware",
+        "isExtraImport": true,
+        "detail": "src.middlewares.jwt_middleware",
+        "documentation": {}
+    },
+    {
+        "label": "UsersRepository",
+        "importPath": "src.repositories.users_repository",
+        "description": "src.repositories.users_repository",
+        "isExtraImport": true,
+        "detail": "src.repositories.users_repository",
+        "documentation": {}
+    },
+    {
+        "label": "UsersRepository",
+        "importPath": "src.repositories.users_repository",
+        "description": "src.repositories.users_repository",
+        "isExtraImport": true,
+        "detail": "src.repositories.users_repository",
+        "documentation": {}
+    },
+    {
+        "label": "CreateUserDto",
+        "importPath": "src.schemas.create_user_dto",
+        "description": "src.schemas.create_user_dto",
+        "isExtraImport": true,
+        "detail": "src.schemas.create_user_dto",
+        "documentation": {}
+    },
+    {
+        "label": "SignInDto",
+        "importPath": "src.schemas.sign_in_dto",
+        "description": "src.schemas.sign_in_dto",
+        "isExtraImport": true,
+        "detail": "src.schemas.sign_in_dto",
+        "documentation": {}
+    },
+    {
+        "label": "UsersService",
+        "importPath": "src.services.users_service",
+        "description": "src.services.users_service",
+        "isExtraImport": true,
+        "detail": "src.services.users_service",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jwt",
+        "description": "jwt",
+        "detail": "jwt",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "importPath": "starlette.config",
+        "description": "starlette.config",
+        "isExtraImport": true,
+        "detail": "starlette.config",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "importPath": "starlette.config",
+        "description": "starlette.config",
+        "isExtraImport": true,
+        "detail": "starlette.config",
+        "documentation": {}
+    },
+    {
+        "label": "bcrypt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "bcrypt",
+        "description": "bcrypt",
+        "detail": "bcrypt",
+        "documentation": {}
+    },
+    {
+        "label": "asynccontextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "users",
+        "importPath": "src.routes.users",
+        "description": "src.routes.users",
+        "isExtraImport": true,
+        "detail": "src.routes.users",
+        "documentation": {}
+    },
+    {
+        "label": "auth_service",
+        "kind": 5,
+        "importPath": "src.middlewares.jwt_middleware",
+        "description": "src.middlewares.jwt_middleware",
+        "peekOfCode": "auth_service = AuthService()\nbearer_scheme = HTTPBearer()\nasync def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme)) -> str:\n  token = credentials.credentials\n  user_id = await auth_service.verify_token(token)\n  if user_id is None:\n    raise HTTPException(\n      status_code=HTTP_401_UNAUTHORIZED,\n      detail=\"Invalid or expired token\",\n      headers={\"WWW-Authenticate\": \"Bearer\"},",
+        "detail": "src.middlewares.jwt_middleware",
+        "documentation": {}
+    },
+    {
+        "label": "bearer_scheme",
+        "kind": 5,
+        "importPath": "src.middlewares.jwt_middleware",
+        "description": "src.middlewares.jwt_middleware",
+        "peekOfCode": "bearer_scheme = HTTPBearer()\nasync def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme)) -> str:\n  token = credentials.credentials\n  user_id = await auth_service.verify_token(token)\n  if user_id is None:\n    raise HTTPException(\n      status_code=HTTP_401_UNAUTHORIZED,\n      detail=\"Invalid or expired token\",\n      headers={\"WWW-Authenticate\": \"Bearer\"},\n    )",
+        "detail": "src.middlewares.jwt_middleware",
+        "documentation": {}
+    },
+    {
+        "label": "Users",
+        "kind": 6,
+        "importPath": "src.models.users_model",
+        "description": "src.models.users_model",
+        "peekOfCode": "class Users(Model):\n  id = fields.UUIDField(pk=True, default=uuid.uuid4)\n  name = fields.CharField(null=False, min_length=2, max_length=10)\n  email = fields.CharField(null=False, min_length=5, max_length=40, unique=True)\n  password_hash = fields.CharField(null=False, max_length=300)\n  refresh_token = fields.CharField(null=True, max_length=300)\n  created_at = fields.DatetimeField(auto_now_add=True)\n  modified_at = fields.DatetimeField(auto_now=True)\nUsersPydantic: Type[PydanticModel] = pydantic_model_creator(\n    Users, name=\"Users\"",
+        "detail": "src.models.users_model",
+        "documentation": {}
+    },
+    {
+        "label": "UsersRepository",
+        "kind": 6,
+        "importPath": "src.repositories.users_repository",
+        "description": "src.repositories.users_repository",
+        "peekOfCode": "class UsersRepository:\n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self, repository = Users):\n    if not hasattr(self, \"initialized\"):\n      self.initialized = True\n      self.repository = repository",
+        "detail": "src.repositories.users_repository",
+        "documentation": {}
+    },
+    {
+        "label": "get_auth_service",
+        "kind": 2,
+        "importPath": "src.routes.users",
+        "description": "src.routes.users",
+        "peekOfCode": "def get_auth_service() -> AuthService: \n  auth_service = AuthService()\n  return auth_service\ndef get_users_service() -> UsersService:\n  repository = UsersRepository()\n  auth_service = get_auth_service()\n  users_service = UsersService(repository=repository, auth_service=auth_service)\n  return users_service\n@users.post(\"/sign-up\")\nasync def sign_up(dto: CreateUserDto, service: UsersService = Depends(get_users_service)):",
+        "detail": "src.routes.users",
+        "documentation": {}
+    },
+    {
+        "label": "get_users_service",
+        "kind": 2,
+        "importPath": "src.routes.users",
+        "description": "src.routes.users",
+        "peekOfCode": "def get_users_service() -> UsersService:\n  repository = UsersRepository()\n  auth_service = get_auth_service()\n  users_service = UsersService(repository=repository, auth_service=auth_service)\n  return users_service\n@users.post(\"/sign-up\")\nasync def sign_up(dto: CreateUserDto, service: UsersService = Depends(get_users_service)):\n  try:\n    email_exist = await service.find_email(dto.email)\n    if email_exist: ",
+        "detail": "src.routes.users",
+        "documentation": {}
+    },
+    {
+        "label": "users",
+        "kind": 5,
+        "importPath": "src.routes.users",
+        "description": "src.routes.users",
+        "peekOfCode": "users = APIRouter(\n  prefix= \"/users\", \n  tags=[\"users\"], \n  responses={404: {\"description\": \"Not Found\"}}\n)\ndef get_auth_service() -> AuthService: \n  auth_service = AuthService()\n  return auth_service\ndef get_users_service() -> UsersService:\n  repository = UsersRepository()",
+        "detail": "src.routes.users",
+        "documentation": {}
+    },
+    {
+        "label": "CreateUserDto",
+        "kind": 6,
+        "importPath": "src.schemas.create_user_dto",
+        "description": "src.schemas.create_user_dto",
+        "peekOfCode": "class CreateUserDto(BaseModel):\n  name: str = Field(..., description=\"이름\")\n  email: str = Field(..., description=\"이메일\")\n  password: str = Field(..., description=\"비밀번호\")\n  class Config:\n    json_schema_extra = {\n      \"example\" : {\n        \"name\": \"홍길동\",\n        \"email\": \"user@email.com\",\n        \"password\": \"Example123!\"",
+        "detail": "src.schemas.create_user_dto",
+        "documentation": {}
+    },
+    {
+        "label": "SignInDto",
+        "kind": 6,
+        "importPath": "src.schemas.sign_in_dto",
+        "description": "src.schemas.sign_in_dto",
+        "peekOfCode": "class SignInDto(BaseModel):\n  email: str = Field(..., description=\"이메일\")\n  password: str = Field(..., description=\"비밀번호\")\n  class Config:\n    json_schema_extra = {\n      \"example\": {\n        \"email\": \"user@email.com\",\n        \"password\": \"Example123!\",\n      }\n    }",
+        "detail": "src.schemas.sign_in_dto",
+        "documentation": {}
+    },
+    {
+        "label": "AuthService",
+        "kind": 6,
+        "importPath": "src.services.auth_service",
+        "description": "src.services.auth_service",
+        "peekOfCode": "class AuthService: \n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self):\n    if not hasattr(self, \"initialized\"):\n      config = Config('.env')\n      if not config: ",
+        "detail": "src.services.auth_service",
+        "documentation": {}
+    },
+    {
+        "label": "UsersService",
+        "kind": 6,
+        "importPath": "src.services.users_service",
+        "description": "src.services.users_service",
+        "peekOfCode": "class UsersService: \n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self, repository: UsersRepository, auth_service: AuthService):\n    if not hasattr(self, \"initialized\"):\n      self.initialized = True\n      self.repository = repository or UsersRepository()",
+        "detail": "src.services.users_service",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "config = Config('.env')\n@asynccontextmanager\nasync def lifespan(app: FastAPI):\n  try:\n    await Tortoise.init(\n      db_url=config(\"DB_URL\"),\n      modules={\"models\": [\"src.models.users_model\"]},\n    )\n    await Tortoise.generate_schemas()\n    logging.info(\"DB initialized successfully\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI(lifespan=lifespan)\napp.include_router(users)\n@app.get(\"/\")\nasync def read_root():\n    return {\"Hello\": \"World\"}\n# 로그 설정\nlogging.basicConfig(level=logging.INFO)",
+        "detail": "main",
+        "documentation": {}
+    }
+]

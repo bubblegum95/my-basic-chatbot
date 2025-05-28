@@ -17,17 +17,29 @@ class UsersService:
       self.repository = repository or UsersRepository()
       self.auth_service = auth_service or AuthService()
 
-  def hash_password(self, pw: str):
+  async def create_token(self, user_id: str, refresh: bool = False):
+    return await self.auth_service.create_token(user_id=user_id, refresh=refresh)
+  
+  async def verify_token(self, token: str):
+    return await self.auth_service.verify_token(token=token)
+  
+  def hash_password(self, pw: str) -> bytes:
     return bcrypt.hashpw(pw.encode('utf-8'), bcrypt.gensalt())
+  
+  def compare_password(self, pw: bytes, hpw: bytes): 
+    return bcrypt.checkpw(pw, hpw)
   
   async def find_email(self, email: str):
     return await self.repository.find_email(email=email)
   
   async def create_one(self, **dto):
-    return await self.repository.create(dto=dto)
+    return await self.repository.create(**dto)
   
   async def find_one_by_email(self, email: str):
     return await self.repository.find_one_by_email(email=email)
   
   async def find_one_by_id(self, id: str):
     return await self.repository.find_one_by_id(id=id)
+  
+  async def modify_token(self, id: str, refresh_token: str):
+    return await self.repository.modify_token(id=id, refresh_token=refresh_token)
