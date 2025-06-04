@@ -4,6 +4,7 @@ import logging
 from starlette.config import Config
 from tortoise import Tortoise
 from src.routes.users import users
+from src.routes.chat import chat
 
 
 config = Config('.env')
@@ -13,7 +14,7 @@ async def lifespan(app: FastAPI):
   try:
     await Tortoise.init(
       db_url=config("DB_URL"),
-      modules={"models": ["src.models.users_model"]},
+      modules={"models": ["src.models.users_model", "src.models.collections_model", "src.models.documents_model", "src.models.chat_history_model"]},
     )
     await Tortoise.generate_schemas()
     logging.info("DB initialized successfully")
@@ -26,6 +27,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 app.include_router(users)
+app.include_router(chat)
 
 @app.get("/")
 async def read_root():

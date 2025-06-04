@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+from fastapi import HTTPException
 import jwt
 from starlette.config import Config
 
@@ -32,14 +33,21 @@ class AuthService:
     token = jwt.encode(payload, self.jwt_secret, algorithm=self.jwt_algorithm)
     return token
   
-  async def verify_token(self, token: str) -> str | None:
+  async def verify_token(self, token: str) -> str:
     try:
       payload = jwt.decode(token, self.jwt_secret, algorithms=[self.jwt_algorithm])
       user_id = payload["id"]
       return user_id
     except jwt.ExpiredSignatureError:
-      print("토큰이 만료되었습니다.")
-      return None
+      raise HTTPException(
+        detail={
+          "error": "토큰이 만료되었습니다."},
+        status_code=400,
+      )
     except jwt.InvalidTokenError:
-      print("잘못된 토큰입니다.")
-      return None
+      raise HTTPException(
+        detail={
+          "error": "잘못된 토큰입니다."
+        },
+        status_code=400
+      )

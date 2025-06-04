@@ -14,6 +14,7 @@ class Users(Model):
   created_at = fields.DatetimeField(auto_now_add=True)
   modified_at = fields.DatetimeField(auto_now=True)
 
+
 UsersPydantic: Type[PydanticModel] = pydantic_model_creator(
     Users, name="Users"
 )

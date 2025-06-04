@@ -1,5 +1,406 @@
 [
     {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "os.path",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.path",
+        "description": "os.path",
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "ArgumentParser",
+        "importPath": "argparse",
+        "description": "argparse",
+        "isExtraImport": true,
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Container",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TextIO",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "cast",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Container",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Type",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "pdfminer",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pdfminer",
+        "description": "pdfminer",
+        "detail": "pdfminer",
+        "documentation": {}
+    },
+    {
+        "label": "PDFDocument",
+        "importPath": "pdfminer.pdfdocument",
+        "description": "pdfminer.pdfdocument",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfdocument",
+        "documentation": {}
+    },
+    {
+        "label": "PDFNoOutlines",
+        "importPath": "pdfminer.pdfdocument",
+        "description": "pdfminer.pdfdocument",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfdocument",
+        "documentation": {}
+    },
+    {
+        "label": "PDFXRefFallback",
+        "importPath": "pdfminer.pdfdocument",
+        "description": "pdfminer.pdfdocument",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfdocument",
+        "documentation": {}
+    },
+    {
+        "label": "PDFIOError",
+        "importPath": "pdfminer.pdfexceptions",
+        "description": "pdfminer.pdfexceptions",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfexceptions",
+        "documentation": {}
+    },
+    {
+        "label": "PDFObjectNotFound",
+        "importPath": "pdfminer.pdfexceptions",
+        "description": "pdfminer.pdfexceptions",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfexceptions",
+        "documentation": {}
+    },
+    {
+        "label": "PDFTypeError",
+        "importPath": "pdfminer.pdfexceptions",
+        "description": "pdfminer.pdfexceptions",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfexceptions",
+        "documentation": {}
+    },
+    {
+        "label": "PDFValueError",
+        "importPath": "pdfminer.pdfexceptions",
+        "description": "pdfminer.pdfexceptions",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfexceptions",
+        "documentation": {}
+    },
+    {
+        "label": "PDFValueError",
+        "importPath": "pdfminer.pdfexceptions",
+        "description": "pdfminer.pdfexceptions",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfexceptions",
+        "documentation": {}
+    },
+    {
+        "label": "PDFPage",
+        "importPath": "pdfminer.pdfpage",
+        "description": "pdfminer.pdfpage",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfpage",
+        "documentation": {}
+    },
+    {
+        "label": "PDFParser",
+        "importPath": "pdfminer.pdfparser",
+        "description": "pdfminer.pdfparser",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdfparser",
+        "documentation": {}
+    },
+    {
+        "label": "PDFObjRef",
+        "importPath": "pdfminer.pdftypes",
+        "description": "pdfminer.pdftypes",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdftypes",
+        "documentation": {}
+    },
+    {
+        "label": "PDFStream",
+        "importPath": "pdfminer.pdftypes",
+        "description": "pdfminer.pdftypes",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdftypes",
+        "documentation": {}
+    },
+    {
+        "label": "resolve1",
+        "importPath": "pdfminer.pdftypes",
+        "description": "pdfminer.pdftypes",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdftypes",
+        "documentation": {}
+    },
+    {
+        "label": "stream_value",
+        "importPath": "pdfminer.pdftypes",
+        "description": "pdfminer.pdftypes",
+        "isExtraImport": true,
+        "detail": "pdfminer.pdftypes",
+        "documentation": {}
+    },
+    {
+        "label": "LIT",
+        "importPath": "pdfminer.psparser",
+        "description": "pdfminer.psparser",
+        "isExtraImport": true,
+        "detail": "pdfminer.psparser",
+        "documentation": {}
+    },
+    {
+        "label": "PSKeyword",
+        "importPath": "pdfminer.psparser",
+        "description": "pdfminer.psparser",
+        "isExtraImport": true,
+        "detail": "pdfminer.psparser",
+        "documentation": {}
+    },
+    {
+        "label": "PSLiteral",
+        "importPath": "pdfminer.psparser",
+        "description": "pdfminer.psparser",
+        "isExtraImport": true,
+        "detail": "pdfminer.psparser",
+        "documentation": {}
+    },
+    {
+        "label": "isnumber",
+        "importPath": "pdfminer.utils",
+        "description": "pdfminer.utils",
+        "isExtraImport": true,
+        "detail": "pdfminer.utils",
+        "documentation": {}
+    },
+    {
+        "label": "AnyIO",
+        "importPath": "pdfminer.utils",
+        "description": "pdfminer.utils",
+        "isExtraImport": true,
+        "detail": "pdfminer.utils",
+        "documentation": {}
+    },
+    {
+        "label": "pdfminer.high_level",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pdfminer.high_level",
+        "description": "pdfminer.high_level",
+        "detail": "pdfminer.high_level",
+        "documentation": {}
+    },
+    {
+        "label": "LAParams",
+        "importPath": "pdfminer.layout",
+        "description": "pdfminer.layout",
+        "isExtraImport": true,
+        "detail": "pdfminer.layout",
+        "documentation": {}
+    },
+    {
+        "label": "zip",
+        "importPath": "builtins",
+        "description": "builtins",
+        "isExtraImport": true,
+        "detail": "builtins",
+        "documentation": {}
+    },
+    {
+        "label": "str",
+        "importPath": "builtins",
+        "description": "builtins",
+        "isExtraImport": true,
+        "detail": "builtins",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "cElementTree",
+        "importPath": "xml.etree",
+        "description": "xml.etree",
+        "isExtraImport": true,
+        "detail": "xml.etree",
+        "documentation": {}
+    },
+    {
+        "label": "pyxnat",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyxnat",
+        "description": "pyxnat",
+        "detail": "pyxnat",
+        "documentation": {}
+    },
+    {
         "label": "Depends",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -25,6 +426,54 @@
     },
     {
         "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -96,20 +545,51 @@
         "documentation": {}
     },
     {
-        "label": "Type",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "Model",
+        "importPath": "tortoise",
+        "description": "tortoise",
         "isExtraImport": true,
-        "detail": "typing",
+        "detail": "tortoise",
         "documentation": {}
     },
     {
-        "label": "uuid",
-        "kind": 6,
+        "label": "fields",
+        "importPath": "tortoise",
+        "description": "tortoise",
         "isExtraImport": true,
-        "importPath": "uuid",
-        "description": "uuid",
-        "detail": "uuid",
+        "detail": "tortoise",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "importPath": "tortoise",
+        "description": "tortoise",
+        "isExtraImport": true,
+        "detail": "tortoise",
+        "documentation": {}
+    },
+    {
+        "label": "fields",
+        "importPath": "tortoise",
+        "description": "tortoise",
+        "isExtraImport": true,
+        "detail": "tortoise",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "importPath": "tortoise",
+        "description": "tortoise",
+        "isExtraImport": true,
+        "detail": "tortoise",
+        "documentation": {}
+    },
+    {
+        "label": "fields",
+        "importPath": "tortoise",
+        "description": "tortoise",
+        "isExtraImport": true,
+        "detail": "tortoise",
         "documentation": {}
     },
     {
@@ -137,6 +617,47 @@
         "documentation": {}
     },
     {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "Collections",
+        "importPath": "src.models.collections_model",
+        "description": "src.models.collections_model",
+        "isExtraImport": true,
+        "detail": "src.models.collections_model",
+        "documentation": {}
+    },
+    {
+        "label": "Collections",
+        "importPath": "src.models.collections_model",
+        "description": "src.models.collections_model",
+        "isExtraImport": true,
+        "detail": "src.models.collections_model",
+        "documentation": {}
+    },
+    {
+        "label": "Collections",
+        "importPath": "src.models.collections_model",
+        "description": "src.models.collections_model",
+        "isExtraImport": true,
+        "detail": "src.models.collections_model",
+        "documentation": {}
+    },
+    {
+        "label": "Collections",
+        "importPath": "src.models.collections_model",
+        "description": "src.models.collections_model",
+        "isExtraImport": true,
+        "detail": "src.models.collections_model",
+        "documentation": {}
+    },
+    {
         "label": "pydantic_model_creator",
         "importPath": "tortoise.contrib.pydantic",
         "description": "tortoise.contrib.pydantic",
@@ -153,6 +674,22 @@
         "documentation": {}
     },
     {
+        "label": "Documents",
+        "importPath": "src.models.documents_model",
+        "description": "src.models.documents_model",
+        "isExtraImport": true,
+        "detail": "src.models.documents_model",
+        "documentation": {}
+    },
+    {
+        "label": "Documents",
+        "importPath": "src.models.documents_model",
+        "description": "src.models.documents_model",
+        "isExtraImport": true,
+        "detail": "src.models.documents_model",
+        "documentation": {}
+    },
+    {
         "label": "Users",
         "importPath": "src.models.users_model",
         "description": "src.models.users_model",
@@ -161,11 +698,36 @@
         "documentation": {}
     },
     {
-        "label": "JSONResponse",
-        "importPath": "fastapi.responses",
-        "description": "fastapi.responses",
+        "label": "Users",
+        "importPath": "src.models.users_model",
+        "description": "src.models.users_model",
         "isExtraImport": true,
-        "detail": "fastapi.responses",
+        "detail": "src.models.users_model",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "CharacterTextSplitter",
+        "importPath": "langchain_text_splitters",
+        "description": "langchain_text_splitters",
+        "isExtraImport": true,
+        "detail": "langchain_text_splitters",
+        "documentation": {}
+    },
+    {
+        "label": "RecursiveCharacterTextSplitter",
+        "importPath": "langchain_text_splitters",
+        "description": "langchain_text_splitters",
+        "isExtraImport": true,
+        "detail": "langchain_text_splitters",
         "documentation": {}
     },
     {
@@ -174,6 +736,142 @@
         "description": "src.middlewares.jwt_middleware",
         "isExtraImport": true,
         "detail": "src.middlewares.jwt_middleware",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "src.middlewares.jwt_middleware",
+        "description": "src.middlewares.jwt_middleware",
+        "isExtraImport": true,
+        "detail": "src.middlewares.jwt_middleware",
+        "documentation": {}
+    },
+    {
+        "label": "CollectionsRepository",
+        "importPath": "src.repositories.collections_repository",
+        "description": "src.repositories.collections_repository",
+        "isExtraImport": true,
+        "detail": "src.repositories.collections_repository",
+        "documentation": {}
+    },
+    {
+        "label": "CollectionsRepository",
+        "importPath": "src.repositories.collections_repository",
+        "description": "src.repositories.collections_repository",
+        "isExtraImport": true,
+        "detail": "src.repositories.collections_repository",
+        "documentation": {}
+    },
+    {
+        "label": "StartChatDto",
+        "importPath": "src.schemas.start_chat_dto",
+        "description": "src.schemas.start_chat_dto",
+        "isExtraImport": true,
+        "detail": "src.schemas.start_chat_dto",
+        "documentation": {}
+    },
+    {
+        "label": "CollectionsService",
+        "importPath": "src.services.collections_service",
+        "description": "src.services.collections_service",
+        "isExtraImport": true,
+        "detail": "src.services.collections_service",
+        "documentation": {}
+    },
+    {
+        "label": "PyPDFLoader",
+        "importPath": "langchain_community.document_loaders",
+        "description": "langchain_community.document_loaders",
+        "isExtraImport": true,
+        "detail": "langchain_community.document_loaders",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "importPath": "langchain_core.documents",
+        "description": "langchain_core.documents",
+        "isExtraImport": true,
+        "detail": "langchain_core.documents",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "AIService",
+        "importPath": "src.services.ai_service",
+        "description": "src.services.ai_service",
+        "isExtraImport": true,
+        "detail": "src.services.ai_service",
+        "documentation": {}
+    },
+    {
+        "label": "RetrievalQA",
+        "importPath": "langchain.chains",
+        "description": "langchain.chains",
+        "isExtraImport": true,
+        "detail": "langchain.chains",
+        "documentation": {}
+    },
+    {
+        "label": "DocumentsService",
+        "importPath": "src.services.documents_service",
+        "description": "src.services.documents_service",
+        "isExtraImport": true,
+        "detail": "src.services.documents_service",
+        "documentation": {}
+    },
+    {
+        "label": "DocumentsRepository",
+        "importPath": "src.repositories.documents_repository",
+        "description": "src.repositories.documents_repository",
+        "isExtraImport": true,
+        "detail": "src.repositories.documents_repository",
+        "documentation": {}
+    },
+    {
+        "label": "DocumentsRepository",
+        "importPath": "src.repositories.documents_repository",
+        "description": "src.repositories.documents_repository",
+        "isExtraImport": true,
+        "detail": "src.repositories.documents_repository",
+        "documentation": {}
+    },
+    {
+        "label": "in_transaction",
+        "importPath": "tortoise.transactions",
+        "description": "tortoise.transactions",
+        "isExtraImport": true,
+        "detail": "tortoise.transactions",
+        "documentation": {}
+    },
+    {
+        "label": "ChatHistory",
+        "importPath": "src.models.chat_history_model",
+        "description": "src.models.chat_history_model",
+        "isExtraImport": true,
+        "detail": "src.models.chat_history_model",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
         "documentation": {}
     },
     {
@@ -249,6 +947,79 @@
         "documentation": {}
     },
     {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "getpass",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "getpass",
+        "description": "getpass",
+        "detail": "getpass",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAI",
+        "importPath": "openai",
+        "description": "openai",
+        "isExtraImport": true,
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "importPath": "starlette.config",
+        "description": "starlette.config",
+        "isExtraImport": true,
+        "detail": "starlette.config",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "importPath": "starlette.config",
+        "description": "starlette.config",
+        "isExtraImport": true,
+        "detail": "starlette.config",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "importPath": "starlette.config",
+        "description": "starlette.config",
+        "isExtraImport": true,
+        "detail": "starlette.config",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAIEmbeddings",
+        "importPath": "langchain_openai",
+        "description": "langchain_openai",
+        "isExtraImport": true,
+        "detail": "langchain_openai",
+        "documentation": {}
+    },
+    {
+        "label": "Chroma",
+        "importPath": "langchain_community.vectorstores",
+        "description": "langchain_community.vectorstores",
+        "isExtraImport": true,
+        "detail": "langchain_community.vectorstores",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -274,22 +1045,6 @@
         "documentation": {}
     },
     {
-        "label": "Config",
-        "importPath": "starlette.config",
-        "description": "starlette.config",
-        "isExtraImport": true,
-        "detail": "starlette.config",
-        "documentation": {}
-    },
-    {
-        "label": "Config",
-        "importPath": "starlette.config",
-        "description": "starlette.config",
-        "isExtraImport": true,
-        "detail": "starlette.config",
-        "documentation": {}
-    },
-    {
         "label": "bcrypt",
         "kind": 6,
         "isExtraImport": true,
@@ -307,20 +1062,406 @@
         "documentation": {}
     },
     {
-        "label": "logging",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "logging",
-        "description": "logging",
-        "detail": "logging",
-        "documentation": {}
-    },
-    {
         "label": "users",
         "importPath": "src.routes.users",
         "description": "src.routes.users",
         "isExtraImport": true,
         "detail": "src.routes.users",
+        "documentation": {}
+    },
+    {
+        "label": "chat",
+        "importPath": "src.routes.chat",
+        "description": "src.routes.chat",
+        "isExtraImport": true,
+        "detail": "src.routes.chat",
+        "documentation": {}
+    },
+    {
+        "label": "escape",
+        "kind": 2,
+        "importPath": ".venv.bin.dumppdf",
+        "description": ".venv.bin.dumppdf",
+        "peekOfCode": "def escape(s: Union[str, bytes]) -> str:\n    if isinstance(s, bytes):\n        us = str(s, \"latin-1\")\n    else:\n        us = s\n    return ESC_PAT.sub(lambda m: \"&#%d;\" % ord(m.group(0)), us)\ndef dumpxml(out: TextIO, obj: object, codec: Optional[str] = None) -> None:\n    if obj is None:\n        out.write(\"<null />\")\n        return",
+        "detail": ".venv.bin.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "dumpxml",
+        "kind": 2,
+        "importPath": ".venv.bin.dumppdf",
+        "description": ".venv.bin.dumppdf",
+        "peekOfCode": "def dumpxml(out: TextIO, obj: object, codec: Optional[str] = None) -> None:\n    if obj is None:\n        out.write(\"<null />\")\n        return\n    if isinstance(obj, dict):\n        out.write('<dict size=\"%d\">\\n' % len(obj))\n        for k, v in obj.items():\n            out.write(\"<key>%s</key>\\n\" % k)\n            out.write(\"<value>\")\n            dumpxml(out, v)",
+        "detail": ".venv.bin.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "dumptrailers",
+        "kind": 2,
+        "importPath": ".venv.bin.dumppdf",
+        "description": ".venv.bin.dumppdf",
+        "peekOfCode": "def dumptrailers(\n    out: TextIO,\n    doc: PDFDocument,\n    show_fallback_xref: bool = False,\n) -> None:\n    for xref in doc.xrefs:\n        if not isinstance(xref, PDFXRefFallback) or show_fallback_xref:\n            out.write(\"<trailer>\\n\")\n            dumpxml(out, xref.get_trailer())\n            out.write(\"\\n</trailer>\\n\\n\")",
+        "detail": ".venv.bin.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "dumpallobjs",
+        "kind": 2,
+        "importPath": ".venv.bin.dumppdf",
+        "description": ".venv.bin.dumppdf",
+        "peekOfCode": "def dumpallobjs(\n    out: TextIO,\n    doc: PDFDocument,\n    codec: Optional[str] = None,\n    show_fallback_xref: bool = False,\n) -> None:\n    visited = set()\n    out.write(\"<pdf>\")\n    for xref in doc.xrefs:\n        for objid in xref.get_objids():",
+        "detail": ".venv.bin.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "dumpoutline",
+        "kind": 2,
+        "importPath": ".venv.bin.dumppdf",
+        "description": ".venv.bin.dumppdf",
+        "peekOfCode": "def dumpoutline(\n    outfp: TextIO,\n    fname: str,\n    objids: Any,\n    pagenos: Container[int],\n    password: str = \"\",\n    dumpall: bool = False,\n    codec: Optional[str] = None,\n    extractdir: Optional[str] = None,\n) -> None:",
+        "detail": ".venv.bin.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "extractembedded",
+        "kind": 2,
+        "importPath": ".venv.bin.dumppdf",
+        "description": ".venv.bin.dumppdf",
+        "peekOfCode": "def extractembedded(fname: str, password: str, extractdir: str) -> None:\n    def extract1(objid: int, obj: Dict[str, Any]) -> None:\n        filename = os.path.basename(obj.get(\"UF\") or cast(bytes, obj.get(\"F\")).decode())\n        fileref = obj[\"EF\"].get(\"UF\") or obj[\"EF\"].get(\"F\")\n        fileobj = doc.getobj(fileref.objid)\n        if not isinstance(fileobj, PDFStream):\n            error_msg = (\n                \"unable to process PDF: reference for %r is not a \"\n                \"PDFStream\" % filename\n            )",
+        "detail": ".venv.bin.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "dumppdf",
+        "kind": 2,
+        "importPath": ".venv.bin.dumppdf",
+        "description": ".venv.bin.dumppdf",
+        "peekOfCode": "def dumppdf(\n    outfp: TextIO,\n    fname: str,\n    objids: Iterable[int],\n    pagenos: Container[int],\n    password: str = \"\",\n    dumpall: bool = False,\n    codec: Optional[str] = None,\n    extractdir: Optional[str] = None,\n    show_fallback_xref: bool = False,",
+        "detail": ".venv.bin.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "create_parser",
+        "kind": 2,
+        "importPath": ".venv.bin.dumppdf",
+        "description": ".venv.bin.dumppdf",
+        "peekOfCode": "def create_parser() -> ArgumentParser:\n    parser = ArgumentParser(description=__doc__, add_help=True)\n    parser.add_argument(\n        \"files\",\n        type=str,\n        default=None,\n        nargs=\"+\",\n        help=\"One or more paths to PDF files.\",\n    )\n    parser.add_argument(",
+        "detail": ".venv.bin.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": ".venv.bin.dumppdf",
+        "description": ".venv.bin.dumppdf",
+        "peekOfCode": "def main(argv: Optional[List[str]] = None) -> None:\n    parser = create_parser()\n    args = parser.parse_args(args=argv)\n    if args.debug:\n        logging.getLogger().setLevel(logging.DEBUG)\n    if args.outfile == \"-\":\n        outfp = sys.stdout\n    else:\n        outfp = open(args.outfile, \"w\")\n    if args.objects:",
+        "detail": ".venv.bin.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": ".venv.bin.dumppdf",
+        "description": ".venv.bin.dumppdf",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nESC_PAT = re.compile(r'[\\000-\\037&<>()\"\\042\\047\\134\\177-\\377]')\ndef escape(s: Union[str, bytes]) -> str:\n    if isinstance(s, bytes):\n        us = str(s, \"latin-1\")\n    else:\n        us = s\n    return ESC_PAT.sub(lambda m: \"&#%d;\" % ord(m.group(0)), us)\ndef dumpxml(out: TextIO, obj: object, codec: Optional[str] = None) -> None:\n    if obj is None:",
+        "detail": ".venv.bin.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "ESC_PAT",
+        "kind": 5,
+        "importPath": ".venv.bin.dumppdf",
+        "description": ".venv.bin.dumppdf",
+        "peekOfCode": "ESC_PAT = re.compile(r'[\\000-\\037&<>()\"\\042\\047\\134\\177-\\377]')\ndef escape(s: Union[str, bytes]) -> str:\n    if isinstance(s, bytes):\n        us = str(s, \"latin-1\")\n    else:\n        us = s\n    return ESC_PAT.sub(lambda m: \"&#%d;\" % ord(m.group(0)), us)\ndef dumpxml(out: TextIO, obj: object, codec: Optional[str] = None) -> None:\n    if obj is None:\n        out.write(\"<null />\")",
+        "detail": ".venv.bin.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "LITERAL_FILESPEC",
+        "kind": 5,
+        "importPath": ".venv.bin.dumppdf",
+        "description": ".venv.bin.dumppdf",
+        "peekOfCode": "LITERAL_FILESPEC = LIT(\"Filespec\")\nLITERAL_EMBEDDEDFILE = LIT(\"EmbeddedFile\")\ndef extractembedded(fname: str, password: str, extractdir: str) -> None:\n    def extract1(objid: int, obj: Dict[str, Any]) -> None:\n        filename = os.path.basename(obj.get(\"UF\") or cast(bytes, obj.get(\"F\")).decode())\n        fileref = obj[\"EF\"].get(\"UF\") or obj[\"EF\"].get(\"F\")\n        fileobj = doc.getobj(fileref.objid)\n        if not isinstance(fileobj, PDFStream):\n            error_msg = (\n                \"unable to process PDF: reference for %r is not a \"",
+        "detail": ".venv.bin.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "LITERAL_EMBEDDEDFILE",
+        "kind": 5,
+        "importPath": ".venv.bin.dumppdf",
+        "description": ".venv.bin.dumppdf",
+        "peekOfCode": "LITERAL_EMBEDDEDFILE = LIT(\"EmbeddedFile\")\ndef extractembedded(fname: str, password: str, extractdir: str) -> None:\n    def extract1(objid: int, obj: Dict[str, Any]) -> None:\n        filename = os.path.basename(obj.get(\"UF\") or cast(bytes, obj.get(\"F\")).decode())\n        fileref = obj[\"EF\"].get(\"UF\") or obj[\"EF\"].get(\"F\")\n        fileobj = doc.getobj(fileref.objid)\n        if not isinstance(fileobj, PDFStream):\n            error_msg = (\n                \"unable to process PDF: reference for %r is not a \"\n                \"PDFStream\" % filename",
+        "detail": ".venv.bin.dumppdf",
+        "documentation": {}
+    },
+    {
+        "label": "float_or_disabled",
+        "kind": 2,
+        "importPath": ".venv.bin.pdf2txt",
+        "description": ".venv.bin.pdf2txt",
+        "peekOfCode": "def float_or_disabled(x: str) -> Optional[float]:\n    if x.lower().strip() == \"disabled\":\n        return None\n    try:\n        return float(x)\n    except ValueError:\n        raise argparse.ArgumentTypeError(f\"invalid float value: {x}\")\ndef extract_text(\n    files: Iterable[str] = [],\n    outfile: str = \"-\",",
+        "detail": ".venv.bin.pdf2txt",
+        "documentation": {}
+    },
+    {
+        "label": "extract_text",
+        "kind": 2,
+        "importPath": ".venv.bin.pdf2txt",
+        "description": ".venv.bin.pdf2txt",
+        "peekOfCode": "def extract_text(\n    files: Iterable[str] = [],\n    outfile: str = \"-\",\n    laparams: Optional[LAParams] = None,\n    output_type: str = \"text\",\n    codec: str = \"utf-8\",\n    strip_control: bool = False,\n    maxpages: int = 0,\n    page_numbers: Optional[Container[int]] = None,\n    password: str = \"\",",
+        "detail": ".venv.bin.pdf2txt",
+        "documentation": {}
+    },
+    {
+        "label": "create_parser",
+        "kind": 2,
+        "importPath": ".venv.bin.pdf2txt",
+        "description": ".venv.bin.pdf2txt",
+        "peekOfCode": "def create_parser() -> argparse.ArgumentParser:\n    parser = argparse.ArgumentParser(description=__doc__, add_help=True)\n    parser.add_argument(\n        \"files\",\n        type=str,\n        default=None,\n        nargs=\"+\",\n        help=\"One or more paths to PDF files.\",\n    )\n    parser.add_argument(",
+        "detail": ".venv.bin.pdf2txt",
+        "documentation": {}
+    },
+    {
+        "label": "parse_args",
+        "kind": 2,
+        "importPath": ".venv.bin.pdf2txt",
+        "description": ".venv.bin.pdf2txt",
+        "peekOfCode": "def parse_args(args: Optional[List[str]]) -> argparse.Namespace:\n    parsed_args = create_parser().parse_args(args=args)\n    # Propagate parsed layout parameters to LAParams object\n    if parsed_args.no_laparams:\n        parsed_args.laparams = None\n    else:\n        parsed_args.laparams = LAParams(\n            line_overlap=parsed_args.line_overlap,\n            char_margin=parsed_args.char_margin,\n            line_margin=parsed_args.line_margin,",
+        "detail": ".venv.bin.pdf2txt",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": ".venv.bin.pdf2txt",
+        "description": ".venv.bin.pdf2txt",
+        "peekOfCode": "def main(args: Optional[List[str]] = None) -> int:\n    parsed_args = parse_args(args)\n    outfp = extract_text(**vars(parsed_args))\n    outfp.close()\n    return 0\nif __name__ == \"__main__\":\n    sys.exit(main())",
+        "detail": ".venv.bin.pdf2txt",
+        "documentation": {}
+    },
+    {
+        "label": "OUTPUT_TYPES",
+        "kind": 5,
+        "importPath": ".venv.bin.pdf2txt",
+        "description": ".venv.bin.pdf2txt",
+        "peekOfCode": "OUTPUT_TYPES = ((\".htm\", \"html\"), (\".html\", \"html\"), (\".xml\", \"xml\"), (\".tag\", \"tag\"))\ndef float_or_disabled(x: str) -> Optional[float]:\n    if x.lower().strip() == \"disabled\":\n        return None\n    try:\n        return float(x)\n    except ValueError:\n        raise argparse.ArgumentTypeError(f\"invalid float value: {x}\")\ndef extract_text(\n    files: Iterable[str] = [],",
+        "detail": ".venv.bin.pdf2txt",
+        "documentation": {}
+    },
+    {
+        "label": "cmp",
+        "kind": 2,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "def cmp(a, b):\n    return (a > b) - (a < b)\nfrom builtins import zip\nfrom builtins import str\nimport os\nimport os.path as op\nimport sys\nfrom xml.etree import cElementTree as ET\nimport pyxnat\nPROJ_ATTRS = [",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "copy_attrs",
+        "kind": 2,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "def copy_attrs(src_obj, dest_obj, attr_list):\n    \"\"\" Copies list of attributes form source to destination\"\"\"\n    src_attrs = src_obj.attrs.mget(attr_list)\n    src_list = dict(list(zip(attr_list, src_attrs)))\n    # NOTE: For some reason need to set te again b/c a bug somewhere sets te\n    # to sequence name\n    te_key = 'xnat:mrScanData/parameters/te'\n    if te_key in src_list:\n        src_list[te_key] = src_obj.attrs.get(te_key)\n    dest_obj.attrs.mset(src_list)",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "copy_attributes",
+        "kind": 2,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "def copy_attributes(src_obj, dest_obj):\n    '''Copy attributes from src to dest'''\n    src_type = src_obj.datatype()\n    types = {'xnat:projectData': PROJ_ATTRS,\n             'xnat:subjectData': SUBJ_ATTRS,\n             'xnat:mrSessionData': MR_EXP_ATTRS,\n             'xnat:petSessionData': PET_EXP_ATTRS,\n             'xnat:ctSessionData': CT_EXP_ATTRS,\n             'xnat:mrScanData': MR_SCAN_ATTRS,\n             'xnat:petScanData': PET_SCAN_ATTRS,",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "subj_compare",
+        "kind": 2,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "def subj_compare(item1, item2):\n    '''Compare sort of items'''\n    return cmp(item1.label(), item2.label())\ndef copy_file(src_f, dest_r, cache_d):\n    '''\n    Copy file from XNAT file source to XNAT resource destination,\n    using local cache in between'''\n    f_label = src_f.label()\n    loc_f = cache_d + '/' + f_label\n    # Make subdirectories",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "copy_file",
+        "kind": 2,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "def copy_file(src_f, dest_r, cache_d):\n    '''\n    Copy file from XNAT file source to XNAT resource destination,\n    using local cache in between'''\n    f_label = src_f.label()\n    loc_f = cache_d + '/' + f_label\n    # Make subdirectories\n    loc_d = op.dirname(loc_f)\n    if not op.exists(loc_d):\n        os.makedirs(loc_d)",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "copy_res_zip",
+        "kind": 2,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "def copy_res_zip(src_r, dest_r, cache_d):\n    '''\n    Copy a resource from XNAT source to XNAT destination using local cache\n    in between\n    '''\n    try:\n        # Download zip of resource\n        print('INFO:Downloading resource as zip...')\n        cache_z = src_r.get(cache_d, extract=False)\n        # Upload zip of resource",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "is_empty_resource",
+        "kind": 2,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "def is_empty_resource(_res):\n    '''Check if resource contains any files'''\n    f_count = 0\n    for f_in in _res.files().fetchall('obj'):\n        f_count += 1\n        break\n    return f_count == 0\n# copy_project and copy_subject are untested\n# def copy_project(src_proj, dst_proj, proj_cache_dir):\n#     '''Copy XNAT project from source to destination'''",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "copy_session",
+        "kind": 2,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "def copy_session(src_sess, dst_sess, sess_cache_dir):\n    '''Copy XNAT session from source to destination'''\n    print('INFO:uploading session attributes as xml')\n    # Write xml to file\n    if not op.exists(sess_cache_dir):\n        os.makedirs(sess_cache_dir)\n    sess_xml = src_sess.get()\n    xml_path = op.join(sess_cache_dir, 'sess.xml')\n    write_xml(sess_xml, xml_path)\n    sess_type = src_sess.datatype()",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "copy_scan",
+        "kind": 2,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "def copy_scan(src_scan, dst_scan, scan_cache_dir):\n    '''Copy scan from source XNAT to destination XNAT'''\n    scan_type = src_scan.datatype()\n    if scan_type == '':\n        scan_type = 'xnat:otherDicomScanData'\n    dst_scan.create(scans=scan_type)\n    copy_attributes(src_scan, dst_scan)\n    # Process each resource of scan\n    for src_res in src_scan.resources().fetchall('obj'):\n        res_label = src_res.label()",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "copy_res",
+        "kind": 2,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "def copy_res(src_res, dst_res, res_cache_dir, use_zip=False):\n    '''Copy resource from source XNAT to destination XNAT'''\n    # Create cache dir\n    if not op.exists(res_cache_dir):\n        os.makedirs(res_cache_dir)\n    # Prepare resource and check for empty\n    is_empty = False\n    print(dst_res._uri)\n    if not dst_res.exists():\n        dst_res.create()",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "write_xml",
+        "kind": 2,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "def write_xml(xml_str, file_path, clean_tags=True):\n    \"\"\"Writing XML.\"\"\"\n    root = ET.fromstring(xml_str)\n    # We only want the tags and attributes relevant to root, no children\n    if clean_tags:\n        # Remove ID\n        if 'ID' in root.attrib:\n            del root.attrib['ID']\n        # Remove sharing tags\n        tag = '{http://nrg.wustl.edu/xnat}sharing'",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "create_parser",
+        "kind": 2,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "def create_parser():\n    import argparse\n    \"\"\"Parse commandline arguments.\"\"\"\n    arg_parser = argparse.ArgumentParser(\n        description='Downloads a given experiment/session from an XNAT instance '\n                    'and uploads it to an independent one. Only DICOM resources '\n                    'will be imported.',\n        formatter_class=argparse.RawTextHelpFormatter)\n    arg_parser.add_argument(\n        '--h1', '--source_config', dest='source_config',",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "def main(args):\n    x1 = pyxnat.Interface(config=args.source_config)\n    x2 = pyxnat.Interface(config=args.dest_config)\n    columns = ['subject_label', 'label']\n    e1 = x1.array.experiments(experiment_id=args.experiment_id,\n                              columns=columns).data[0]\n    p = x2.select.project(args.project_id)\n    s = p.subject(e1['subject_label'])\n    if not s.exists():\n        s.create()",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "PROJ_ATTRS",
+        "kind": 5,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "PROJ_ATTRS = [\n    'xnat:projectData/name',\n    'xnat:projectData/description',\n    'xnat:projectData/keywords',\n]\nSUBJ_ATTRS = [\n    'xnat:subjectData/group',\n    'xnat:subjectData/src',\n    'xnat:subjectData/investigator/firstname',\n    'xnat:subjectData/investigator/lastname',",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "SUBJ_ATTRS",
+        "kind": 5,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "SUBJ_ATTRS = [\n    'xnat:subjectData/group',\n    'xnat:subjectData/src',\n    'xnat:subjectData/investigator/firstname',\n    'xnat:subjectData/investigator/lastname',\n    'xnat:subjectData/demographics[@xsi:type=xnat:demographicData]/dob',\n    'xnat:subjectData/demographics[@xsi:type=xnat:demographicData]/yob',\n    'xnat:subjectData/demographics[@xsi:type=xnat:demographicData]/age',\n    'xnat:subjectData/demographics[@xsi:type=xnat:demographicData]/gender',\n    'xnat:subjectData/demographics[@xsi:type=xnat:demographicData]/handedness',",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "MR_EXP_ATTRS",
+        "kind": 5,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "MR_EXP_ATTRS = [\n    'xnat:experimentData/date',\n    'xnat:experimentData/visit_id',\n    'xnat:experimentData/time',\n    'xnat:experimentData/note',\n    'xnat:experimentData/investigator/firstname',\n    'xnat:experimentData/investigator/lastname',\n    'xnat:imageSessionData/scanner/manufacturer',\n    'xnat:imageSessionData/scanner/model',\n    'xnat:imageSessionData/operator',",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "OTHER_DICOM_SCAN_ATTRS",
+        "kind": 5,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "OTHER_DICOM_SCAN_ATTRS = [\n    'xnat:imageScanData/type',\n    'xnat:imageScanData/UID',\n    'xnat:imageScanData/note',\n    'xnat:imageScanData/quality',\n    'xnat:imageScanData/condition',\n    'xnat:imageScanData/series_description',\n    'xnat:imageScanData/documentation',\n    'xnat:imageScanData/frames',\n    'xnat:imageScanData/startTime',",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "MR_SCAN_ATTRS",
+        "kind": 5,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "MR_SCAN_ATTRS = [\n    'xnat:imageScanData/type',\n    'xnat:imageScanData/UID',\n    'xnat:imageScanData/note',\n    'xnat:imageScanData/quality',\n    'xnat:imageScanData/condition',\n    'xnat:imageScanData/series_description',\n    'xnat:imageScanData/documentation',\n    'xnat:imageScanData/frames',\n    'xnat:imageScanData/startTime',",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "SC_SCAN_ATTRS",
+        "kind": 5,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "SC_SCAN_ATTRS = [\n    'xnat:imageScanData/type',\n    'xnat:imageScanData/UID',\n    'xnat:imageScanData/note',\n    'xnat:imageScanData/quality',\n    'xnat:imageScanData/condition',\n    'xnat:imageScanData/series_description',\n    'xnat:imageScanData/documentation',\n    'xnat:imageScanData/frames',\n    'xnat:imageScanData/scanner/manufacturer',",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "PET_EXP_ATTRS",
+        "kind": 5,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "PET_EXP_ATTRS = [\n    'xnat:experimentData/date',\n    'xnat:experimentData/visit_id',\n    'xnat:experimentData/time',\n    'xnat:experimentData/note',\n    'xnat:experimentData/investigator/firstname',\n    'xnat:experimentData/investigator/lastname',\n    'xnat:imageSessionData/scanner/manufacturer',\n    'xnat:imageSessionData/scanner/model',\n    'xnat:imageSessionData/operator',",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "CT_EXP_ATTRS",
+        "kind": 5,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "CT_EXP_ATTRS = [\n    'xnat:experimentData/date',\n    'xnat:experimentData/visit_id',\n    'xnat:experimentData/time',\n    'xnat:experimentData/note',\n    'xnat:experimentData/investigator/firstname',\n    'xnat:experimentData/investigator/lastname',\n    'xnat:imageSessionData/scanner/manufacturer',\n    'xnat:imageSessionData/scanner/model',\n    'xnat:imageSessionData/operator',",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "PET_SCAN_ATTRS",
+        "kind": 5,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "PET_SCAN_ATTRS = [\n    'xnat:imageScanData/type',\n    'xnat:imageScanData/UID',\n    'xnat:imageScanData/note',\n    'xnat:imageScanData/quality',\n    'xnat:imageScanData/condition',\n    'xnat:imageScanData/series_description',\n    'xnat:imageScanData/documentation',\n    'xnat:imageScanData/frames',\n    'xnat:imageScanData/scanner/manufacturer',",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "CT_SCAN_ATTRS",
+        "kind": 5,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "CT_SCAN_ATTRS = [\n    'xnat:imageScanData/type',\n    'xnat:imageScanData/UID',\n    'xnat:imageScanData/note',\n    'xnat:imageScanData/quality',\n    'xnat:imageScanData/condition',\n    'xnat:imageScanData/series_description',\n    'xnat:imageScanData/documentation',\n    'xnat:imageScanData/frames',\n    'xnat:imageScanData/scanner/manufacturer',",
+        "detail": ".venv.bin.sessionmirror",
+        "documentation": {}
+    },
+    {
+        "label": "PROC_ATTRS",
+        "kind": 5,
+        "importPath": ".venv.bin.sessionmirror",
+        "description": ".venv.bin.sessionmirror",
+        "peekOfCode": "PROC_ATTRS = [\n    'proc:genProcData/validation/status',\n    'proc:genProcData/procstatus',\n    'proc:genProcData/proctype',\n    'proc:genProcData/procversion',\n    'proc:genProcData/walltimeused',\n    'proc:genProcData/memused'\n]\ndef copy_attrs(src_obj, dest_obj, attr_list):\n    \"\"\" Copies list of attributes form source to destination\"\"\"",
+        "detail": ".venv.bin.sessionmirror",
         "documentation": {}
     },
     {
@@ -342,6 +1483,33 @@
         "documentation": {}
     },
     {
+        "label": "ChatHistory",
+        "kind": 6,
+        "importPath": "src.models.chat_history_model",
+        "description": "src.models.chat_history_model",
+        "peekOfCode": "class ChatHistory(Model):\n  id = fields.UUIDField(pk=True, default=uuid.uuid4)\n  user_message = fields.TextField()\n  chat_response = fields.TextField()\n  created_at = fields.DatetimeField(auto_now_add=True)\n  collection = fields.ForeignKeyField(model_name=\"models.ChatHistory\", related_name=\"chat_history\")",
+        "detail": "src.models.chat_history_model",
+        "documentation": {}
+    },
+    {
+        "label": "Collections",
+        "kind": 6,
+        "importPath": "src.models.collections_model",
+        "description": "src.models.collections_model",
+        "peekOfCode": "class Collections(Model):\n  id = fields.UUIDField(pk=True, default=uuid.uuid4)\n  user = fields.ForeignKeyField(model_name=\"models.Users\", related_name=\"collections\", null=False)\n  name = fields.CharField(min_length=2, max_length=100, null=False)\n  created_at = fields.DatetimeField(auto_now_add=True)",
+        "detail": "src.models.collections_model",
+        "documentation": {}
+    },
+    {
+        "label": "Documents",
+        "kind": 6,
+        "importPath": "src.models.documents_model",
+        "description": "src.models.documents_model",
+        "peekOfCode": "class Documents(Model):\n  id = fields.UUIDField(pk=True, default=uuid.uuid4)\n  path = fields.TextField()\n  created_at = fields.DatetimeField(auto_now_add=True)\n  collection = fields.ForeignKeyField(model_name=\"models.Collections\", related_name=\"documents\", null=False)",
+        "detail": "src.models.documents_model",
+        "documentation": {}
+    },
+    {
         "label": "Users",
         "kind": 6,
         "importPath": "src.models.users_model",
@@ -351,12 +1519,102 @@
         "documentation": {}
     },
     {
+        "label": "CollectionsRepository",
+        "kind": 6,
+        "importPath": "src.repositories.collections_repository",
+        "description": "src.repositories.collections_repository",
+        "peekOfCode": "class CollectionsRepository: \n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self, repository = Collections):\n    if not hasattr(self, \"initialized\"):\n      self.repository = repository\n      self.initialized = True",
+        "detail": "src.repositories.collections_repository",
+        "documentation": {}
+    },
+    {
+        "label": "DocumentsRepository",
+        "kind": 6,
+        "importPath": "src.repositories.documents_repository",
+        "description": "src.repositories.documents_repository",
+        "peekOfCode": "class DocumentsRepository:\n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance \n  def __init__(self, repository: Documents | None = None):\n    if not hasattr(self, \"initialized\"):\n      self.repository = repository or Documents()\n      self.initialized = True",
+        "detail": "src.repositories.documents_repository",
+        "documentation": {}
+    },
+    {
         "label": "UsersRepository",
         "kind": 6,
         "importPath": "src.repositories.users_repository",
         "description": "src.repositories.users_repository",
         "peekOfCode": "class UsersRepository:\n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self, repository = Users):\n    if not hasattr(self, \"initialized\"):\n      self.initialized = True\n      self.repository = repository",
         "detail": "src.repositories.users_repository",
+        "documentation": {}
+    },
+    {
+        "label": "get_service",
+        "kind": 2,
+        "importPath": "src.routes.chat",
+        "description": "src.routes.chat",
+        "peekOfCode": "def get_service(): \n  repository = CollectionsRepository()\n  service = CollectionsService(repository)\n  return service\ndef get_ai_service():\n  return AIService()\ndef get_document_service():\n  repository = DocumentsRepository()\n  return DocumentsService(repository)\nasync def upload_pdf(file: UploadFile) -> str | None:",
+        "detail": "src.routes.chat",
+        "documentation": {}
+    },
+    {
+        "label": "get_ai_service",
+        "kind": 2,
+        "importPath": "src.routes.chat",
+        "description": "src.routes.chat",
+        "peekOfCode": "def get_ai_service():\n  return AIService()\ndef get_document_service():\n  repository = DocumentsRepository()\n  return DocumentsService(repository)\nasync def upload_pdf(file: UploadFile) -> str | None:\n  os.makedirs(\"files\", exist_ok=True)  # 폴더 없으면 생성\n  with open(f\"files/{file.filename}\", \"wb\") as dest_file: \n    stream_obj = file.file\n    shutil.copyfileobj(stream_obj, dest_file)",
+        "detail": "src.routes.chat",
+        "documentation": {}
+    },
+    {
+        "label": "get_document_service",
+        "kind": 2,
+        "importPath": "src.routes.chat",
+        "description": "src.routes.chat",
+        "peekOfCode": "def get_document_service():\n  repository = DocumentsRepository()\n  return DocumentsService(repository)\nasync def upload_pdf(file: UploadFile) -> str | None:\n  os.makedirs(\"files\", exist_ok=True)  # 폴더 없으면 생성\n  with open(f\"files/{file.filename}\", \"wb\") as dest_file: \n    stream_obj = file.file\n    shutil.copyfileobj(stream_obj, dest_file)\n  filename = file.filename\n  return filename",
+        "detail": "src.routes.chat",
+        "documentation": {}
+    },
+    {
+        "label": "py_load_file",
+        "kind": 2,
+        "importPath": "src.routes.chat",
+        "description": "src.routes.chat",
+        "peekOfCode": "def py_load_file(path: str) -> list[Document]: # text \n  loader = PyPDFLoader(path)\n  pages = loader.load()\n  return pages\ndef tokenaize_text(data: Iterable): # 토큰 수 기준 텍스트 분할\n  splitter = CharacterTextSplitter.from_tiktoken_encoder(\n    chunk_size=600,\n    chunk_overlap=200,\n    encoding_name='cl100k_base'\n  )",
+        "detail": "src.routes.chat",
+        "documentation": {}
+    },
+    {
+        "label": "tokenaize_text",
+        "kind": 2,
+        "importPath": "src.routes.chat",
+        "description": "src.routes.chat",
+        "peekOfCode": "def tokenaize_text(data: Iterable): # 토큰 수 기준 텍스트 분할\n  splitter = CharacterTextSplitter.from_tiktoken_encoder(\n    chunk_size=600,\n    chunk_overlap=200,\n    encoding_name='cl100k_base'\n  )\n  docs = splitter.split_documents(data)\n  page = []\n  for doc in docs:\n    content = doc.page_content",
+        "detail": "src.routes.chat",
+        "documentation": {}
+    },
+    {
+        "label": "split_recursive",
+        "kind": 2,
+        "importPath": "src.routes.chat",
+        "description": "src.routes.chat",
+        "peekOfCode": "def split_recursive(data: list[Document]) -> list[list[str]]: # 재귀적 텍스트 분할\n  splitter = RecursiveCharacterTextSplitter(\n    chunk_size = 500,\n    chunk_overlap  = 100,\n    length_function = len,\n  )\n  docs = []\n  for doc in data:\n    content = doc.page_content\n    text = splitter.split_text(content)",
+        "detail": "src.routes.chat",
+        "documentation": {}
+    },
+    {
+        "label": "flatten",
+        "kind": 2,
+        "importPath": "src.routes.chat",
+        "description": "src.routes.chat",
+        "peekOfCode": "def flatten(nested: list[list[str]]):\n    return [item for sublist in nested for item in sublist]\n@chat.post(\"/new-chat\")\nasync def start_chat(\n  file: UploadFile,\n  dto: StartChatDto,\n  user_id: str = Depends(get_current_user), \n  ai_service: AIService = Depends(get_ai_service),\n):\n  try: ",
+        "detail": "src.routes.chat",
+        "documentation": {}
+    },
+    {
+        "label": "chat",
+        "kind": 5,
+        "importPath": "src.routes.chat",
+        "description": "src.routes.chat",
+        "peekOfCode": "chat = APIRouter(\n  prefix= \"/chat\", \n  tags=[\"collections\"], \n  responses={404: {\"description\": \"Not Found\"}}\n)\ndef get_service(): \n  repository = CollectionsRepository()\n  service = CollectionsService(repository)\n  return service\ndef get_ai_service():",
+        "detail": "src.routes.chat",
         "documentation": {}
     },
     {
@@ -405,12 +1663,48 @@
         "documentation": {}
     },
     {
+        "label": "StartChatDto",
+        "kind": 6,
+        "importPath": "src.schemas.start_chat_dto",
+        "description": "src.schemas.start_chat_dto",
+        "peekOfCode": "class StartChatDto(BaseModel):\n  query: str = Field(..., description=\"사용자 질문\", examples=[\"사용자 질문\"])",
+        "detail": "src.schemas.start_chat_dto",
+        "documentation": {}
+    },
+    {
+        "label": "AIService",
+        "kind": 6,
+        "importPath": "src.services.ai_service",
+        "description": "src.services.ai_service",
+        "peekOfCode": "class AIService:\n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self):\n    if not hasattr(self, \"initialized\"):\n      load_dotenv()\n      config = Config(\".env\")",
+        "detail": "src.services.ai_service",
+        "documentation": {}
+    },
+    {
         "label": "AuthService",
         "kind": 6,
         "importPath": "src.services.auth_service",
         "description": "src.services.auth_service",
         "peekOfCode": "class AuthService: \n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self):\n    if not hasattr(self, \"initialized\"):\n      config = Config('.env')\n      if not config: ",
         "detail": "src.services.auth_service",
+        "documentation": {}
+    },
+    {
+        "label": "CollectionsService",
+        "kind": 6,
+        "importPath": "src.services.collections_service",
+        "description": "src.services.collections_service",
+        "peekOfCode": "class CollectionsService: \n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self, repository: CollectionsRepository | None = None):\n    if not hasattr(self, \"intialized\"):\n      self.repository = repository or CollectionsRepository()\n      self.initialized = True",
+        "detail": "src.services.collections_service",
+        "documentation": {}
+    },
+    {
+        "label": "DocumentsService",
+        "kind": 6,
+        "importPath": "src.services.documents_service",
+        "description": "src.services.documents_service",
+        "peekOfCode": "class DocumentsService:\n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self, repository: DocumentsRepository):\n    if not hasattr(self, \"initialized\"):\n      self.repository = repository\n      self.initialized = True",
+        "detail": "src.services.documents_service",
         "documentation": {}
     },
     {
@@ -427,7 +1721,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "config = Config('.env')\n@asynccontextmanager\nasync def lifespan(app: FastAPI):\n  try:\n    await Tortoise.init(\n      db_url=config(\"DB_URL\"),\n      modules={\"models\": [\"src.models.users_model\"]},\n    )\n    await Tortoise.generate_schemas()\n    logging.info(\"DB initialized successfully\")",
+        "peekOfCode": "config = Config('.env')\n@asynccontextmanager\nasync def lifespan(app: FastAPI):\n  try:\n    await Tortoise.init(\n      db_url=config(\"DB_URL\"),\n      modules={\"models\": [\"src.models.users_model\", \"src.models.collections_model\", \"src.models.documents_model\", \"src.models.chat_history_model\"]},\n    )\n    await Tortoise.generate_schemas()\n    logging.info(\"DB initialized successfully\")",
         "detail": "main",
         "documentation": {}
     },
@@ -436,7 +1730,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "app = FastAPI(lifespan=lifespan)\napp.include_router(users)\n@app.get(\"/\")\nasync def read_root():\n    return {\"Hello\": \"World\"}\n# 로그 설정\nlogging.basicConfig(level=logging.INFO)",
+        "peekOfCode": "app = FastAPI(lifespan=lifespan)\napp.include_router(users)\napp.include_router(chat)\n@app.get(\"/\")\nasync def read_root():\n    return {\"Hello\": \"World\"}\n# 로그 설정\nlogging.basicConfig(level=logging.INFO)",
         "detail": "main",
         "documentation": {}
     }
