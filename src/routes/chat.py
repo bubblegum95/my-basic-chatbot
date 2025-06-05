@@ -1,17 +1,16 @@
 import os
+import re
 import shutil
-from fastapi import APIRouter, Depends, UploadFile, HTTPException
+from fastapi import APIRouter, Depends, Form, UploadFile, HTTPException
 from langchain_text_splitters import CharacterTextSplitter, RecursiveCharacterTextSplitter
 from src.middlewares.jwt_middleware import get_current_user
 from src.repositories.collections_repository import CollectionsRepository
-from src.schemas.start_chat_dto import StartChatDto
 from src.services.collections_service import CollectionsService
 from langchain_community.document_loaders import PyPDFLoader
 from typing import Iterable
 from langchain_core.documents import Document
 from dotenv import load_dotenv
 from src.services.ai_service import AIService
-from langchain.chains import RetrievalQA
 from src.services.documents_service import DocumentsService
 from src.repositories.documents_repository import DocumentsRepository
 from src.models.collections_model import Collections
@@ -19,6 +18,11 @@ from tortoise.transactions import in_transaction
 from src.models.users_model import Users
 from src.models.documents_model import Documents
 from src.models.chat_history_model import ChatHistory
+from langchain.retrievers.multi_query import MultiQueryRetriever
+from langchain.prompts import ChatPromptTemplate
+from langchain.schema.runnable import RunnablePassthrough
+from langchain_core.output_parsers import StrOutputParser
+
 
 
 load_dotenv()
@@ -84,11 +88,19 @@ def split_recursive(data: list[Document]) -> list[list[str]]: # 재귀적 텍스
 
 def flatten(nested: list[list[str]]):
     return [item for sublist in nested for item in sublist]
-  
+
+def sanitize_collection_name(name: str) -> str:
+    # 한글 제거, 특수문자 제거, 공백 → _
+    name = re.sub(r"[^a-zA-Z0-9._-]", "_", name)
+    return name.strip("_")
+
+def format_docs(docs):
+    return '\n\n'.join([d.page_content for d in docs])
+
 @chat.post("/new-chat")
 async def start_chat(
   file: UploadFile,
-  dto: StartChatDto,
+  query: str = Form(..., description="사용자 질문", example="사용자 질문"),
   user_id: str = Depends(get_current_user), 
   ai_service: AIService = Depends(get_ai_service),
 ):
@@ -102,38 +114,55 @@ async def start_chat(
   
     path = f"files/{filename}"
     file_contents = py_load_file(path)
-    collection_name = f"user_${user_id}_topic_{filename}"
-    
+    raw_name = f"user-{user_id}"
+    collection_name = sanitize_collection_name(raw_name)
+    print(f"collection name: {collection_name}")
 
-    tokens = split_recursive(file_contents)
-    vectorstore = await ai_service.create_vector_db(tokens[0], collection_name) # collections_name
+    tokens = split_recursive(file_contents) # 토큰화
+    flatten_tokens = flatten(tokens)
+    vectorstore = await ai_service.create_vectorstore(flatten_tokens, "collectionnameisnotnull") # 임베딩 및 저장소 생성
+    print('here!')
     retriever = vectorstore.as_retriever(
       search_type="mmr",
       search_kwargs={'k': 1, "lambda_mult": 0.5, "fetch_k": 5}
+    ) 
+    
+    retriever_from_llm = MultiQueryRetriever.from_llm(
+      retriever=retriever,
+      llm=ai_service.llm
     )
-    qa = RetrievalQA.from_chain_type(
-      llm=ai_service.client,
-      retriever=retriever
+    # Prompt
+    template = '''Answer the question based only on the following context:
+    {context}
+
+    Question: {question}
+    '''
+    prompt = ChatPromptTemplate.from_template(template)
+    llm = ai_service.llm
+    chain = (
+      {'context': retriever_from_llm | format_docs, 'question': RunnablePassthrough()}
+      | prompt
+      | llm
+      | StrOutputParser()
     )
 
-    answer = qa.run(dto.query) # 사용자 질문
+    response = chain.invoke(query)
+    print(response)
+    
     async with in_transaction() as connection:
       user = await Users.filter(id=user_id).first()
       if not user: 
         raise Exception("사용자가 존재하지 않습니다.")
       
-      collection = await Collections.create(user=user, collection_name=collection_name, using_db=connection)
+      collection = await Collections.create(user=user, name=query, using_db=connection)
       document = await Documents.create(collection=collection, path=path, using_db=connection)
-      history = await ChatHistory.create(collection=collection, user_message=dto.query, chat_response=answer)
-      return collection
-    
-    print(answer)
+      history = await ChatHistory.create(collection=collection, user_message=query, chat_response=response, using_db=connection)
 
-    return answer
+    return {"answer": response, "collection_name": collection_name, "collection_id": collection.id}
   except Exception as error:
     raise HTTPException(
       status_code=400,
       detail={
-        "error": error
+        "error": str(error)
       }
     )

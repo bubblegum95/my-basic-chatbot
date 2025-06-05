@@ -433,6 +433,14 @@
         "documentation": {}
     },
     {
+        "label": "Form",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "UploadFile",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -466,14 +474,6 @@
     },
     {
         "label": "HTTPException",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "UploadFile",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -763,14 +763,6 @@
         "documentation": {}
     },
     {
-        "label": "StartChatDto",
-        "importPath": "src.schemas.start_chat_dto",
-        "description": "src.schemas.start_chat_dto",
-        "isExtraImport": true,
-        "detail": "src.schemas.start_chat_dto",
-        "documentation": {}
-    },
-    {
         "label": "CollectionsService",
         "importPath": "src.services.collections_service",
         "description": "src.services.collections_service",
@@ -819,14 +811,6 @@
         "documentation": {}
     },
     {
-        "label": "RetrievalQA",
-        "importPath": "langchain.chains",
-        "description": "langchain.chains",
-        "isExtraImport": true,
-        "detail": "langchain.chains",
-        "documentation": {}
-    },
-    {
         "label": "DocumentsService",
         "importPath": "src.services.documents_service",
         "description": "src.services.documents_service",
@@ -864,6 +848,38 @@
         "description": "src.models.chat_history_model",
         "isExtraImport": true,
         "detail": "src.models.chat_history_model",
+        "documentation": {}
+    },
+    {
+        "label": "MultiQueryRetriever",
+        "importPath": "langchain.retrievers.multi_query",
+        "description": "langchain.retrievers.multi_query",
+        "isExtraImport": true,
+        "detail": "langchain.retrievers.multi_query",
+        "documentation": {}
+    },
+    {
+        "label": "ChatPromptTemplate",
+        "importPath": "langchain.prompts",
+        "description": "langchain.prompts",
+        "isExtraImport": true,
+        "detail": "langchain.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "RunnablePassthrough",
+        "importPath": "langchain.schema.runnable",
+        "description": "langchain.schema.runnable",
+        "isExtraImport": true,
+        "detail": "langchain.schema.runnable",
+        "documentation": {}
+    },
+    {
+        "label": "StrOutputParser",
+        "importPath": "langchain_core.output_parsers",
+        "description": "langchain_core.output_parsers",
+        "isExtraImport": true,
+        "detail": "langchain_core.output_parsers",
         "documentation": {}
     },
     {
@@ -947,22 +963,6 @@
         "documentation": {}
     },
     {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
         "label": "getpass",
         "kind": 6,
         "isExtraImport": true,
@@ -972,35 +972,11 @@
         "documentation": {}
     },
     {
-        "label": "OpenAI",
-        "importPath": "openai",
-        "description": "openai",
+        "label": "ChatOpenAI",
+        "importPath": "langchain_openai",
+        "description": "langchain_openai",
         "isExtraImport": true,
-        "detail": "openai",
-        "documentation": {}
-    },
-    {
-        "label": "Config",
-        "importPath": "starlette.config",
-        "description": "starlette.config",
-        "isExtraImport": true,
-        "detail": "starlette.config",
-        "documentation": {}
-    },
-    {
-        "label": "Config",
-        "importPath": "starlette.config",
-        "description": "starlette.config",
-        "isExtraImport": true,
-        "detail": "starlette.config",
-        "documentation": {}
-    },
-    {
-        "label": "Config",
-        "importPath": "starlette.config",
-        "description": "starlette.config",
-        "isExtraImport": true,
-        "detail": "starlette.config",
+        "detail": "langchain_openai",
         "documentation": {}
     },
     {
@@ -1042,6 +1018,22 @@
         "importPath": "jwt",
         "description": "jwt",
         "detail": "jwt",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "importPath": "starlette.config",
+        "description": "starlette.config",
+        "isExtraImport": true,
+        "detail": "starlette.config",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "importPath": "starlette.config",
+        "description": "starlette.config",
+        "isExtraImport": true,
+        "detail": "starlette.config",
         "documentation": {}
     },
     {
@@ -1487,7 +1479,7 @@
         "kind": 6,
         "importPath": "src.models.chat_history_model",
         "description": "src.models.chat_history_model",
-        "peekOfCode": "class ChatHistory(Model):\n  id = fields.UUIDField(pk=True, default=uuid.uuid4)\n  user_message = fields.TextField()\n  chat_response = fields.TextField()\n  created_at = fields.DatetimeField(auto_now_add=True)\n  collection = fields.ForeignKeyField(model_name=\"models.ChatHistory\", related_name=\"chat_history\")",
+        "peekOfCode": "class ChatHistory(Model):\n  id = fields.UUIDField(pk=True, default=uuid.uuid4)\n  user_message = fields.TextField()\n  chat_response = fields.TextField()\n  created_at = fields.DatetimeField(auto_now_add=True)\n  collection = fields.ForeignKeyField(model_name=\"models.Collections\", related_name=\"chat_history\")",
         "detail": "src.models.chat_history_model",
         "documentation": {}
     },
@@ -1604,7 +1596,25 @@
         "kind": 2,
         "importPath": "src.routes.chat",
         "description": "src.routes.chat",
-        "peekOfCode": "def flatten(nested: list[list[str]]):\n    return [item for sublist in nested for item in sublist]\n@chat.post(\"/new-chat\")\nasync def start_chat(\n  file: UploadFile,\n  dto: StartChatDto,\n  user_id: str = Depends(get_current_user), \n  ai_service: AIService = Depends(get_ai_service),\n):\n  try: ",
+        "peekOfCode": "def flatten(nested: list[list[str]]):\n    return [item for sublist in nested for item in sublist]\ndef sanitize_collection_name(name: str) -> str:\n    # 한글 제거, 특수문자 제거, 공백 → _\n    name = re.sub(r\"[^a-zA-Z0-9._-]\", \"_\", name)\n    return name.strip(\"_\")\ndef format_docs(docs):\n    return '\\n\\n'.join([d.page_content for d in docs])\n@chat.post(\"/new-chat\")\nasync def start_chat(",
+        "detail": "src.routes.chat",
+        "documentation": {}
+    },
+    {
+        "label": "sanitize_collection_name",
+        "kind": 2,
+        "importPath": "src.routes.chat",
+        "description": "src.routes.chat",
+        "peekOfCode": "def sanitize_collection_name(name: str) -> str:\n    # 한글 제거, 특수문자 제거, 공백 → _\n    name = re.sub(r\"[^a-zA-Z0-9._-]\", \"_\", name)\n    return name.strip(\"_\")\ndef format_docs(docs):\n    return '\\n\\n'.join([d.page_content for d in docs])\n@chat.post(\"/new-chat\")\nasync def start_chat(\n  file: UploadFile,\n  query: str = Form(..., description=\"사용자 질문\", example=\"사용자 질문\"),",
+        "detail": "src.routes.chat",
+        "documentation": {}
+    },
+    {
+        "label": "format_docs",
+        "kind": 2,
+        "importPath": "src.routes.chat",
+        "description": "src.routes.chat",
+        "peekOfCode": "def format_docs(docs):\n    return '\\n\\n'.join([d.page_content for d in docs])\n@chat.post(\"/new-chat\")\nasync def start_chat(\n  file: UploadFile,\n  query: str = Form(..., description=\"사용자 질문\", example=\"사용자 질문\"),\n  user_id: str = Depends(get_current_user), \n  ai_service: AIService = Depends(get_ai_service),\n):\n  try: ",
         "detail": "src.routes.chat",
         "documentation": {}
     },
@@ -1663,20 +1673,11 @@
         "documentation": {}
     },
     {
-        "label": "StartChatDto",
-        "kind": 6,
-        "importPath": "src.schemas.start_chat_dto",
-        "description": "src.schemas.start_chat_dto",
-        "peekOfCode": "class StartChatDto(BaseModel):\n  query: str = Field(..., description=\"사용자 질문\", examples=[\"사용자 질문\"])",
-        "detail": "src.schemas.start_chat_dto",
-        "documentation": {}
-    },
-    {
         "label": "AIService",
         "kind": 6,
         "importPath": "src.services.ai_service",
         "description": "src.services.ai_service",
-        "peekOfCode": "class AIService:\n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self):\n    if not hasattr(self, \"initialized\"):\n      load_dotenv()\n      config = Config(\".env\")",
+        "peekOfCode": "class AIService:\n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self):\n    if not hasattr(self, \"initialized\"):\n      load_dotenv()\n      if not os.environ.get(\"OPENAI_API_KEY\"): ",
         "detail": "src.services.ai_service",
         "documentation": {}
     },
