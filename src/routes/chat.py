@@ -1,18 +1,19 @@
+import datetime
+from operator import itemgetter
 import os
 import re
 import shutil
-from fastapi import APIRouter, Depends, Form, UploadFile, HTTPException
+from fastapi import APIRouter, Depends, Form, Query, UploadFile, HTTPException
 from langchain_text_splitters import CharacterTextSplitter, RecursiveCharacterTextSplitter
 from src.middlewares.jwt_middleware import get_current_user
-from src.repositories.collections_repository import CollectionsRepository
-from src.services.collections_service import CollectionsService
+from src.schemas.history_query_dto import HistoryQueryDto
+from src.schemas.req_to_ai_dto import ReqToAiDto
+from src.services.collections_service import CollectionsService, get_collections_service
 from langchain_community.document_loaders import PyPDFLoader
-from typing import Iterable
+from typing import Annotated, Iterable
 from langchain_core.documents import Document
 from dotenv import load_dotenv
-from src.services.ai_service import AIService
-from src.services.documents_service import DocumentsService
-from src.repositories.documents_repository import DocumentsRepository
+from src.services.ai_service import AIService, get_ai_service
 from src.models.collections_model import Collections
 from tortoise.transactions import in_transaction
 from src.models.users_model import Users
@@ -22,7 +23,9 @@ from langchain.retrievers.multi_query import MultiQueryRetriever
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema.runnable import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
-
+from src.services.chat_history_service import ChatHistoryService, get_chat_history_service
+from src.services.users_service import get_users_service, UsersService
+from src.schemas.query_dto import QueryDto
 
 
 load_dotenv()
@@ -32,18 +35,6 @@ chat = APIRouter(
   tags=["collections"], 
   responses={404: {"description": "Not Found"}}
 )
-
-def get_service(): 
-  repository = CollectionsRepository()
-  service = CollectionsService(repository)
-  return service
-
-def get_ai_service():
-  return AIService()
-
-def get_document_service():
-  repository = DocumentsRepository()
-  return DocumentsService(repository)
 
 async def upload_pdf(file: UploadFile) -> str | None:
   os.makedirs("files", exist_ok=True)  # 폴더 없으면 생성
@@ -87,15 +78,30 @@ def split_recursive(data: list[Document]) -> list[list[str]]: # 재귀적 텍스
   return docs
 
 def flatten(nested: list[list[str]]):
-    return [item for sublist in nested for item in sublist]
+  return [item for sublist in nested for item in sublist]
 
 def sanitize_collection_name(name: str) -> str:
-    # 한글 제거, 특수문자 제거, 공백 → _
-    name = re.sub(r"[^a-zA-Z0-9._-]", "_", name)
-    return name.strip("_")
+  name = re.sub(r"[^a-zA-Z0-9._-]", "_", name)
+  return name.strip("_")
 
 def format_docs(docs):
-    return '\n\n'.join([d.page_content for d in docs])
+  return '\n\n'.join([d.page_content for d in docs])
+
+def create_multi_query_retriever(retriever, llm):
+  return MultiQueryRetriever.from_llm(
+    retriever=retriever,
+    llm=llm
+  )
+  
+def create_prompt_template():
+  # Prompt
+  template = '''Answer the question based only on the following context:
+  {context}
+
+  Question: {question}
+  '''
+  prompt = ChatPromptTemplate.from_template(template)
+  return prompt
 
 @chat.post("/new-chat")
 async def start_chat(
@@ -120,24 +126,13 @@ async def start_chat(
 
     tokens = split_recursive(file_contents) # 토큰화
     flatten_tokens = flatten(tokens)
-    vectorstore = await ai_service.create_vectorstore(flatten_tokens, "collectionnameisnotnull") # 임베딩 및 저장소 생성
-    print('here!')
+    vectorstore = await ai_service.create_vectorstore(flatten_tokens, collection_name) # 임베딩 및 저장소 생성
     retriever = vectorstore.as_retriever(
       search_type="mmr",
       search_kwargs={'k': 1, "lambda_mult": 0.5, "fetch_k": 5}
     ) 
-    
-    retriever_from_llm = MultiQueryRetriever.from_llm(
-      retriever=retriever,
-      llm=ai_service.llm
-    )
-    # Prompt
-    template = '''Answer the question based only on the following context:
-    {context}
-
-    Question: {question}
-    '''
-    prompt = ChatPromptTemplate.from_template(template)
+    retriever_from_llm = create_multi_query_retriever(retriever, ai_service.llm)
+    prompt = create_prompt_template()
     llm = ai_service.llm
     chain = (
       {'context': retriever_from_llm | format_docs, 'question': RunnablePassthrough()}
@@ -154,15 +149,129 @@ async def start_chat(
       if not user: 
         raise Exception("사용자가 존재하지 않습니다.")
       
-      collection = await Collections.create(user=user, name=query, using_db=connection)
+      collection = await Collections.create(user=user, name=collection_name, topic=query, using_db=connection)
       document = await Documents.create(collection=collection, path=path, using_db=connection)
       history = await ChatHistory.create(collection=collection, user_message=query, chat_response=response, using_db=connection)
 
-    return {"answer": response, "collection_name": collection_name, "collection_id": collection.id}
+    return {
+      "status_code": 201,
+      "data": {
+        "collection": collection,
+        "history": history, 
+      },
+    }
   except Exception as error:
     raise HTTPException(
       status_code=400,
       detail={
         "error": str(error)
+      }
+    )
+  
+@chat.post("/collection_id")
+async def request_to_ai(
+  collection_id: str,
+  dto: ReqToAiDto,
+  user_id: str = Depends(get_current_user),
+  collection_service: CollectionsService = Depends(get_collections_service),
+  ai_service: AIService = Depends(get_ai_service)
+): 
+  try: 
+    selected_collection = await collection_service.find_one(collection_id)
+    if not selected_collection or str(selected_collection.user.id) != user_id : 
+      raise Exception("해당 컬렉션을 조회할 수 없습니다.")
+    
+    collection_name = selected_collection.name
+    vectorstore = await ai_service.find_vectorstore(collection_name)
+    retriever = vectorstore.as_retriever(
+      search_type="mmr",
+      search_kwargs={'k': 5, "lambda_mult": 0.5, "fetch_k": 10}
+    )
+    retriever_from_llm = create_multi_query_retriever(retriever, ai_service.llm)
+    prompt = create_prompt_template()
+    llm = ai_service.llm
+    chain = (
+      {'context': retriever_from_llm | format_docs, 'question': RunnablePassthrough()}
+      | prompt
+      | llm
+      | StrOutputParser()
+    )
+
+    response = chain.invoke(dto.user_message)
+    print(response)
+    async with in_transaction() as connection:
+      updated_collection = await Collections.filter(id=selected_collection.id).update(updated_at=datetime.datetime.now())
+      history = await ChatHistory.create(collection=selected_collection, user_message=dto.user_message, chat_response=response, using_db=connection)
+      
+    return {
+      "status_code": 201,
+      "data": {
+        "collection": updated_collection,
+        "history": history
+      }
+    }
+  except Exception as error:
+    raise HTTPException(
+      status_code=400,
+      detail={
+        "error": str(error)
+      }
+    )
+
+  
+@chat.get("/")
+async def find_my_chat_lists(
+  query: Annotated[QueryDto, Query()],
+  user_id: str = Depends(get_current_user),
+  service: CollectionsService = Depends(get_collections_service)
+):
+  try:
+    offset = query.limit * (query.page - 1)
+    result = await service.find_many(user_id, offset, query.limit, order_by="created_at")
+    d, t = itemgetter('data', 'total')(result)
+  
+    return {
+      "status_code": 200,
+      "data": {
+        "items": d,
+        "total": t,
+      } 
+    }
+  except Exception as error: 
+    raise HTTPException(
+      status_code=400,
+      detail={
+        "error": str(error)
+      }
+    )
+  
+@chat.get('/collection_id')
+async def get_collection_message(
+  query: Annotated[HistoryQueryDto, Query()],
+  user_id: str = Depends(get_current_user),
+  chat_history_service: ChatHistoryService = Depends(get_chat_history_service),
+  user_service: UsersService = Depends(get_users_service)
+): 
+  try:
+    offset = query.limit * (query.page - 1)
+    previous_user = await user_service.find_one_by_id(id=user_id)
+    if not previous_user: 
+      raise Exception("사용자가 존재하지 않습니다.")
+    
+    history_data = await chat_history_service.find_many(query.collection_id, offset, query.limit)
+    d, t = itemgetter("data", "total")(history_data)
+
+    return {
+      "status_code": 200, 
+      "data": {
+        "items": d,
+        "total": t,
+      }
+    }
+  except Exception as error: 
+    raise HTTPException(
+      status_code=400,
+      detail={
+        error: str(error)
       }
     )

@@ -173,7 +173,55 @@
         "documentation": {}
     },
     {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -441,6 +489,14 @@
         "documentation": {}
     },
     {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "UploadFile",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -537,7 +593,7 @@
         "documentation": {}
     },
     {
-        "label": "AuthService",
+        "label": "get_auth_service",
         "importPath": "src.services.auth_service",
         "description": "src.services.auth_service",
         "isExtraImport": true,
@@ -674,6 +730,47 @@
         "documentation": {}
     },
     {
+        "label": "ChatHistory",
+        "importPath": "src.models.chat_history_model",
+        "description": "src.models.chat_history_model",
+        "isExtraImport": true,
+        "detail": "src.models.chat_history_model",
+        "documentation": {}
+    },
+    {
+        "label": "ChatHistory",
+        "importPath": "src.models.chat_history_model",
+        "description": "src.models.chat_history_model",
+        "isExtraImport": true,
+        "detail": "src.models.chat_history_model",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "Documents",
         "importPath": "src.models.documents_model",
         "description": "src.models.documents_model",
@@ -703,6 +800,14 @@
         "description": "src.models.users_model",
         "isExtraImport": true,
         "detail": "src.models.users_model",
+        "documentation": {}
+    },
+    {
+        "label": "itemgetter",
+        "importPath": "operator",
+        "description": "operator",
+        "isExtraImport": true,
+        "detail": "operator",
         "documentation": {}
     },
     {
@@ -747,23 +852,31 @@
         "documentation": {}
     },
     {
-        "label": "CollectionsRepository",
-        "importPath": "src.repositories.collections_repository",
-        "description": "src.repositories.collections_repository",
+        "label": "HistoryQueryDto",
+        "importPath": "src.schemas.history_query_dto",
+        "description": "src.schemas.history_query_dto",
         "isExtraImport": true,
-        "detail": "src.repositories.collections_repository",
+        "detail": "src.schemas.history_query_dto",
         "documentation": {}
     },
     {
-        "label": "CollectionsRepository",
-        "importPath": "src.repositories.collections_repository",
-        "description": "src.repositories.collections_repository",
+        "label": "ReqToAiDto",
+        "importPath": "src.schemas.req_to_ai_dto",
+        "description": "src.schemas.req_to_ai_dto",
         "isExtraImport": true,
-        "detail": "src.repositories.collections_repository",
+        "detail": "src.schemas.req_to_ai_dto",
         "documentation": {}
     },
     {
         "label": "CollectionsService",
+        "importPath": "src.services.collections_service",
+        "description": "src.services.collections_service",
+        "isExtraImport": true,
+        "detail": "src.services.collections_service",
+        "documentation": {}
+    },
+    {
+        "label": "get_collections_service",
         "importPath": "src.services.collections_service",
         "description": "src.services.collections_service",
         "isExtraImport": true,
@@ -811,27 +924,11 @@
         "documentation": {}
     },
     {
-        "label": "DocumentsService",
-        "importPath": "src.services.documents_service",
-        "description": "src.services.documents_service",
+        "label": "get_ai_service",
+        "importPath": "src.services.ai_service",
+        "description": "src.services.ai_service",
         "isExtraImport": true,
-        "detail": "src.services.documents_service",
-        "documentation": {}
-    },
-    {
-        "label": "DocumentsRepository",
-        "importPath": "src.repositories.documents_repository",
-        "description": "src.repositories.documents_repository",
-        "isExtraImport": true,
-        "detail": "src.repositories.documents_repository",
-        "documentation": {}
-    },
-    {
-        "label": "DocumentsRepository",
-        "importPath": "src.repositories.documents_repository",
-        "description": "src.repositories.documents_repository",
-        "isExtraImport": true,
-        "detail": "src.repositories.documents_repository",
+        "detail": "src.services.ai_service",
         "documentation": {}
     },
     {
@@ -840,14 +937,6 @@
         "description": "tortoise.transactions",
         "isExtraImport": true,
         "detail": "tortoise.transactions",
-        "documentation": {}
-    },
-    {
-        "label": "ChatHistory",
-        "importPath": "src.models.chat_history_model",
-        "description": "src.models.chat_history_model",
-        "isExtraImport": true,
-        "detail": "src.models.chat_history_model",
         "documentation": {}
     },
     {
@@ -883,27 +972,67 @@
         "documentation": {}
     },
     {
+        "label": "ChatHistoryService",
+        "importPath": "src.services.chat_history_service",
+        "description": "src.services.chat_history_service",
+        "isExtraImport": true,
+        "detail": "src.services.chat_history_service",
+        "documentation": {}
+    },
+    {
+        "label": "get_chat_history_service",
+        "importPath": "src.services.chat_history_service",
+        "description": "src.services.chat_history_service",
+        "isExtraImport": true,
+        "detail": "src.services.chat_history_service",
+        "documentation": {}
+    },
+    {
+        "label": "get_users_service",
+        "importPath": "src.services.users_service",
+        "description": "src.services.users_service",
+        "isExtraImport": true,
+        "detail": "src.services.users_service",
+        "documentation": {}
+    },
+    {
+        "label": "UsersService",
+        "importPath": "src.services.users_service",
+        "description": "src.services.users_service",
+        "isExtraImport": true,
+        "detail": "src.services.users_service",
+        "documentation": {}
+    },
+    {
+        "label": "UsersService",
+        "importPath": "src.services.users_service",
+        "description": "src.services.users_service",
+        "isExtraImport": true,
+        "detail": "src.services.users_service",
+        "documentation": {}
+    },
+    {
+        "label": "get_users_service",
+        "importPath": "src.services.users_service",
+        "description": "src.services.users_service",
+        "isExtraImport": true,
+        "detail": "src.services.users_service",
+        "documentation": {}
+    },
+    {
+        "label": "QueryDto",
+        "importPath": "src.schemas.query_dto",
+        "description": "src.schemas.query_dto",
+        "isExtraImport": true,
+        "detail": "src.schemas.query_dto",
+        "documentation": {}
+    },
+    {
         "label": "JSONResponse",
         "importPath": "fastapi.responses",
         "description": "fastapi.responses",
         "isExtraImport": true,
         "detail": "fastapi.responses",
-        "documentation": {}
-    },
-    {
-        "label": "UsersRepository",
-        "importPath": "src.repositories.users_repository",
-        "description": "src.repositories.users_repository",
-        "isExtraImport": true,
-        "detail": "src.repositories.users_repository",
-        "documentation": {}
-    },
-    {
-        "label": "UsersRepository",
-        "importPath": "src.repositories.users_repository",
-        "description": "src.repositories.users_repository",
-        "isExtraImport": true,
-        "detail": "src.repositories.users_repository",
         "documentation": {}
     },
     {
@@ -923,11 +1052,51 @@
         "documentation": {}
     },
     {
-        "label": "UsersService",
-        "importPath": "src.services.users_service",
-        "description": "src.services.users_service",
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
         "isExtraImport": true,
-        "detail": "src.services.users_service",
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
         "documentation": {}
     },
     {
@@ -996,22 +1165,6 @@
         "documentation": {}
     },
     {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
         "label": "jwt",
         "kind": 6,
         "isExtraImport": true,
@@ -1037,12 +1190,44 @@
         "documentation": {}
     },
     {
+        "label": "ChatHistoryRepository",
+        "importPath": "src.repositories.chat_history_repository",
+        "description": "src.repositories.chat_history_repository",
+        "isExtraImport": true,
+        "detail": "src.repositories.chat_history_repository",
+        "documentation": {}
+    },
+    {
+        "label": "CollectionsRepository",
+        "importPath": "src.repositories.collections_repository",
+        "description": "src.repositories.collections_repository",
+        "isExtraImport": true,
+        "detail": "src.repositories.collections_repository",
+        "documentation": {}
+    },
+    {
+        "label": "DocumentsRepository",
+        "importPath": "src.repositories.documents_repository",
+        "description": "src.repositories.documents_repository",
+        "isExtraImport": true,
+        "detail": "src.repositories.documents_repository",
+        "documentation": {}
+    },
+    {
         "label": "bcrypt",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "bcrypt",
         "description": "bcrypt",
         "detail": "bcrypt",
+        "documentation": {}
+    },
+    {
+        "label": "UsersRepository",
+        "importPath": "src.repositories.users_repository",
+        "description": "src.repositories.users_repository",
+        "isExtraImport": true,
+        "detail": "src.repositories.users_repository",
         "documentation": {}
     },
     {
@@ -1479,7 +1664,7 @@
         "kind": 6,
         "importPath": "src.models.chat_history_model",
         "description": "src.models.chat_history_model",
-        "peekOfCode": "class ChatHistory(Model):\n  id = fields.UUIDField(pk=True, default=uuid.uuid4)\n  user_message = fields.TextField()\n  chat_response = fields.TextField()\n  created_at = fields.DatetimeField(auto_now_add=True)\n  collection = fields.ForeignKeyField(model_name=\"models.Collections\", related_name=\"chat_history\")",
+        "peekOfCode": "class ChatHistory(Model):\n  id = fields.UUIDField(pk=True, default=uuid.uuid4)\n  user_message = fields.TextField()\n  chat_response = fields.TextField()\n  created_at = fields.DatetimeField(auto_now_add=True)\n  collection = fields.ForeignKeyField(model_name=\"models.Collections\", related_name=\"chathistory\")",
         "detail": "src.models.chat_history_model",
         "documentation": {}
     },
@@ -1488,7 +1673,7 @@
         "kind": 6,
         "importPath": "src.models.collections_model",
         "description": "src.models.collections_model",
-        "peekOfCode": "class Collections(Model):\n  id = fields.UUIDField(pk=True, default=uuid.uuid4)\n  user = fields.ForeignKeyField(model_name=\"models.Users\", related_name=\"collections\", null=False)\n  name = fields.CharField(min_length=2, max_length=100, null=False)\n  created_at = fields.DatetimeField(auto_now_add=True)",
+        "peekOfCode": "class Collections(Model):\n  id = fields.UUIDField(pk=True, default=uuid.uuid4)\n  user = fields.ForeignKeyField(model_name=\"models.Users\", related_name=\"collections\", null=False)\n  name = fields.CharField(min_length=2, max_length=100, null=False)\n  topic = fields.CharField(min_length=2, max_length=100, null=False)\n  created_at = fields.DatetimeField(auto_now_add=True)\n  updated_at = fields.DatetimeField(auto_now=True)",
         "detail": "src.models.collections_model",
         "documentation": {}
     },
@@ -1508,6 +1693,15 @@
         "description": "src.models.users_model",
         "peekOfCode": "class Users(Model):\n  id = fields.UUIDField(pk=True, default=uuid.uuid4)\n  name = fields.CharField(null=False, min_length=2, max_length=10)\n  email = fields.CharField(null=False, min_length=5, max_length=40, unique=True)\n  password_hash = fields.CharField(null=False, max_length=300)\n  refresh_token = fields.CharField(null=True, max_length=300)\n  created_at = fields.DatetimeField(auto_now_add=True)\n  modified_at = fields.DatetimeField(auto_now=True)\nUsersPydantic: Type[PydanticModel] = pydantic_model_creator(\n    Users, name=\"Users\"",
         "detail": "src.models.users_model",
+        "documentation": {}
+    },
+    {
+        "label": "ChatHistoryRepository",
+        "kind": 6,
+        "importPath": "src.repositories.chat_history_repository",
+        "description": "src.repositories.chat_history_repository",
+        "peekOfCode": "class ChatHistoryRepository:\n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self, repository: ChatHistory | None = None):\n    if not hasattr(self, \"intialized\"):\n      self.repository = repository or ChatHistory()\n      self.intialized = True",
+        "detail": "src.repositories.chat_history_repository",
         "documentation": {}
     },
     {
@@ -1535,33 +1729,6 @@
         "description": "src.repositories.users_repository",
         "peekOfCode": "class UsersRepository:\n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self, repository = Users):\n    if not hasattr(self, \"initialized\"):\n      self.initialized = True\n      self.repository = repository",
         "detail": "src.repositories.users_repository",
-        "documentation": {}
-    },
-    {
-        "label": "get_service",
-        "kind": 2,
-        "importPath": "src.routes.chat",
-        "description": "src.routes.chat",
-        "peekOfCode": "def get_service(): \n  repository = CollectionsRepository()\n  service = CollectionsService(repository)\n  return service\ndef get_ai_service():\n  return AIService()\ndef get_document_service():\n  repository = DocumentsRepository()\n  return DocumentsService(repository)\nasync def upload_pdf(file: UploadFile) -> str | None:",
-        "detail": "src.routes.chat",
-        "documentation": {}
-    },
-    {
-        "label": "get_ai_service",
-        "kind": 2,
-        "importPath": "src.routes.chat",
-        "description": "src.routes.chat",
-        "peekOfCode": "def get_ai_service():\n  return AIService()\ndef get_document_service():\n  repository = DocumentsRepository()\n  return DocumentsService(repository)\nasync def upload_pdf(file: UploadFile) -> str | None:\n  os.makedirs(\"files\", exist_ok=True)  # 폴더 없으면 생성\n  with open(f\"files/{file.filename}\", \"wb\") as dest_file: \n    stream_obj = file.file\n    shutil.copyfileobj(stream_obj, dest_file)",
-        "detail": "src.routes.chat",
-        "documentation": {}
-    },
-    {
-        "label": "get_document_service",
-        "kind": 2,
-        "importPath": "src.routes.chat",
-        "description": "src.routes.chat",
-        "peekOfCode": "def get_document_service():\n  repository = DocumentsRepository()\n  return DocumentsService(repository)\nasync def upload_pdf(file: UploadFile) -> str | None:\n  os.makedirs(\"files\", exist_ok=True)  # 폴더 없으면 생성\n  with open(f\"files/{file.filename}\", \"wb\") as dest_file: \n    stream_obj = file.file\n    shutil.copyfileobj(stream_obj, dest_file)\n  filename = file.filename\n  return filename",
-        "detail": "src.routes.chat",
         "documentation": {}
     },
     {
@@ -1596,7 +1763,7 @@
         "kind": 2,
         "importPath": "src.routes.chat",
         "description": "src.routes.chat",
-        "peekOfCode": "def flatten(nested: list[list[str]]):\n    return [item for sublist in nested for item in sublist]\ndef sanitize_collection_name(name: str) -> str:\n    # 한글 제거, 특수문자 제거, 공백 → _\n    name = re.sub(r\"[^a-zA-Z0-9._-]\", \"_\", name)\n    return name.strip(\"_\")\ndef format_docs(docs):\n    return '\\n\\n'.join([d.page_content for d in docs])\n@chat.post(\"/new-chat\")\nasync def start_chat(",
+        "peekOfCode": "def flatten(nested: list[list[str]]):\n  return [item for sublist in nested for item in sublist]\ndef sanitize_collection_name(name: str) -> str:\n  name = re.sub(r\"[^a-zA-Z0-9._-]\", \"_\", name)\n  return name.strip(\"_\")\ndef format_docs(docs):\n  return '\\n\\n'.join([d.page_content for d in docs])\ndef create_multi_query_retriever(retriever, llm):\n  return MultiQueryRetriever.from_llm(\n    retriever=retriever,",
         "detail": "src.routes.chat",
         "documentation": {}
     },
@@ -1605,7 +1772,7 @@
         "kind": 2,
         "importPath": "src.routes.chat",
         "description": "src.routes.chat",
-        "peekOfCode": "def sanitize_collection_name(name: str) -> str:\n    # 한글 제거, 특수문자 제거, 공백 → _\n    name = re.sub(r\"[^a-zA-Z0-9._-]\", \"_\", name)\n    return name.strip(\"_\")\ndef format_docs(docs):\n    return '\\n\\n'.join([d.page_content for d in docs])\n@chat.post(\"/new-chat\")\nasync def start_chat(\n  file: UploadFile,\n  query: str = Form(..., description=\"사용자 질문\", example=\"사용자 질문\"),",
+        "peekOfCode": "def sanitize_collection_name(name: str) -> str:\n  name = re.sub(r\"[^a-zA-Z0-9._-]\", \"_\", name)\n  return name.strip(\"_\")\ndef format_docs(docs):\n  return '\\n\\n'.join([d.page_content for d in docs])\ndef create_multi_query_retriever(retriever, llm):\n  return MultiQueryRetriever.from_llm(\n    retriever=retriever,\n    llm=llm\n  )",
         "detail": "src.routes.chat",
         "documentation": {}
     },
@@ -1614,7 +1781,25 @@
         "kind": 2,
         "importPath": "src.routes.chat",
         "description": "src.routes.chat",
-        "peekOfCode": "def format_docs(docs):\n    return '\\n\\n'.join([d.page_content for d in docs])\n@chat.post(\"/new-chat\")\nasync def start_chat(\n  file: UploadFile,\n  query: str = Form(..., description=\"사용자 질문\", example=\"사용자 질문\"),\n  user_id: str = Depends(get_current_user), \n  ai_service: AIService = Depends(get_ai_service),\n):\n  try: ",
+        "peekOfCode": "def format_docs(docs):\n  return '\\n\\n'.join([d.page_content for d in docs])\ndef create_multi_query_retriever(retriever, llm):\n  return MultiQueryRetriever.from_llm(\n    retriever=retriever,\n    llm=llm\n  )\ndef create_prompt_template():\n  # Prompt\n  template = '''Answer the question based only on the following context:",
+        "detail": "src.routes.chat",
+        "documentation": {}
+    },
+    {
+        "label": "create_multi_query_retriever",
+        "kind": 2,
+        "importPath": "src.routes.chat",
+        "description": "src.routes.chat",
+        "peekOfCode": "def create_multi_query_retriever(retriever, llm):\n  return MultiQueryRetriever.from_llm(\n    retriever=retriever,\n    llm=llm\n  )\ndef create_prompt_template():\n  # Prompt\n  template = '''Answer the question based only on the following context:\n  {context}\n  Question: {question}",
+        "detail": "src.routes.chat",
+        "documentation": {}
+    },
+    {
+        "label": "create_prompt_template",
+        "kind": 2,
+        "importPath": "src.routes.chat",
+        "description": "src.routes.chat",
+        "peekOfCode": "def create_prompt_template():\n  # Prompt\n  template = '''Answer the question based only on the following context:\n  {context}\n  Question: {question}\n  '''\n  prompt = ChatPromptTemplate.from_template(template)\n  return prompt\n@chat.post(\"/new-chat\")\nasync def start_chat(",
         "detail": "src.routes.chat",
         "documentation": {}
     },
@@ -1623,26 +1808,8 @@
         "kind": 5,
         "importPath": "src.routes.chat",
         "description": "src.routes.chat",
-        "peekOfCode": "chat = APIRouter(\n  prefix= \"/chat\", \n  tags=[\"collections\"], \n  responses={404: {\"description\": \"Not Found\"}}\n)\ndef get_service(): \n  repository = CollectionsRepository()\n  service = CollectionsService(repository)\n  return service\ndef get_ai_service():",
+        "peekOfCode": "chat = APIRouter(\n  prefix= \"/chat\", \n  tags=[\"collections\"], \n  responses={404: {\"description\": \"Not Found\"}}\n)\nasync def upload_pdf(file: UploadFile) -> str | None:\n  os.makedirs(\"files\", exist_ok=True)  # 폴더 없으면 생성\n  with open(f\"files/{file.filename}\", \"wb\") as dest_file: \n    stream_obj = file.file\n    shutil.copyfileobj(stream_obj, dest_file)",
         "detail": "src.routes.chat",
-        "documentation": {}
-    },
-    {
-        "label": "get_auth_service",
-        "kind": 2,
-        "importPath": "src.routes.users",
-        "description": "src.routes.users",
-        "peekOfCode": "def get_auth_service() -> AuthService: \n  auth_service = AuthService()\n  return auth_service\ndef get_users_service() -> UsersService:\n  repository = UsersRepository()\n  auth_service = get_auth_service()\n  users_service = UsersService(repository=repository, auth_service=auth_service)\n  return users_service\n@users.post(\"/sign-up\")\nasync def sign_up(dto: CreateUserDto, service: UsersService = Depends(get_users_service)):",
-        "detail": "src.routes.users",
-        "documentation": {}
-    },
-    {
-        "label": "get_users_service",
-        "kind": 2,
-        "importPath": "src.routes.users",
-        "description": "src.routes.users",
-        "peekOfCode": "def get_users_service() -> UsersService:\n  repository = UsersRepository()\n  auth_service = get_auth_service()\n  users_service = UsersService(repository=repository, auth_service=auth_service)\n  return users_service\n@users.post(\"/sign-up\")\nasync def sign_up(dto: CreateUserDto, service: UsersService = Depends(get_users_service)):\n  try:\n    email_exist = await service.find_email(dto.email)\n    if email_exist: ",
-        "detail": "src.routes.users",
         "documentation": {}
     },
     {
@@ -1650,7 +1817,7 @@
         "kind": 5,
         "importPath": "src.routes.users",
         "description": "src.routes.users",
-        "peekOfCode": "users = APIRouter(\n  prefix= \"/users\", \n  tags=[\"users\"], \n  responses={404: {\"description\": \"Not Found\"}}\n)\ndef get_auth_service() -> AuthService: \n  auth_service = AuthService()\n  return auth_service\ndef get_users_service() -> UsersService:\n  repository = UsersRepository()",
+        "peekOfCode": "users = APIRouter(\n  prefix= \"/users\", \n  tags=[\"users\"], \n  responses={404: {\"description\": \"Not Found\"}}\n)\n@users.post(\"/sign-up\")\nasync def sign_up(dto: CreateUserDto, service: UsersService = Depends(get_users_service)):\n  try:\n    email_exist = await service.find_email(dto.email)\n    if email_exist: ",
         "detail": "src.routes.users",
         "documentation": {}
     },
@@ -1661,6 +1828,33 @@
         "description": "src.schemas.create_user_dto",
         "peekOfCode": "class CreateUserDto(BaseModel):\n  name: str = Field(..., description=\"이름\")\n  email: str = Field(..., description=\"이메일\")\n  password: str = Field(..., description=\"비밀번호\")\n  class Config:\n    json_schema_extra = {\n      \"example\" : {\n        \"name\": \"홍길동\",\n        \"email\": \"user@email.com\",\n        \"password\": \"Example123!\"",
         "detail": "src.schemas.create_user_dto",
+        "documentation": {}
+    },
+    {
+        "label": "HistoryQueryDto",
+        "kind": 6,
+        "importPath": "src.schemas.history_query_dto",
+        "description": "src.schemas.history_query_dto",
+        "peekOfCode": "class HistoryQueryDto(BaseModel):\n  collection_id: str = Field(..., description=\"컬렉션/주제 id\")\n  page: int = Field(..., ge=1)\n  limit: int = Field(..., ge=10, le=50)\n  order_by: Literal[\"created_at\", \"updated_at\"] = \"created_at\"",
+        "detail": "src.schemas.history_query_dto",
+        "documentation": {}
+    },
+    {
+        "label": "QueryDto",
+        "kind": 6,
+        "importPath": "src.schemas.query_dto",
+        "description": "src.schemas.query_dto",
+        "peekOfCode": "class QueryDto(BaseModel):\n  page: int = Field(..., ge=1, examples=[1])\n  limit: int = Field(..., ge=10, le=50, examples=[10])\n  order_by: Literal[\"created_at\", \"updated_at\"] = \"updated_at\"",
+        "detail": "src.schemas.query_dto",
+        "documentation": {}
+    },
+    {
+        "label": "ReqToAiDto",
+        "kind": 6,
+        "importPath": "src.schemas.req_to_ai_dto",
+        "description": "src.schemas.req_to_ai_dto",
+        "peekOfCode": "class ReqToAiDto(BaseModel):\n  user_message: str = Field(..., description=\"사용자 질문\", examples=[\"파일 내용을 정리해줘.\"])",
+        "detail": "src.schemas.req_to_ai_dto",
         "documentation": {}
     },
     {
@@ -1682,6 +1876,15 @@
         "documentation": {}
     },
     {
+        "label": "get_ai_service",
+        "kind": 2,
+        "importPath": "src.services.ai_service",
+        "description": "src.services.ai_service",
+        "peekOfCode": "def get_ai_service():\n  return AIService()",
+        "detail": "src.services.ai_service",
+        "documentation": {}
+    },
+    {
         "label": "AuthService",
         "kind": 6,
         "importPath": "src.services.auth_service",
@@ -1691,11 +1894,47 @@
         "documentation": {}
     },
     {
+        "label": "get_auth_service",
+        "kind": 2,
+        "importPath": "src.services.auth_service",
+        "description": "src.services.auth_service",
+        "peekOfCode": "def get_auth_service() -> AuthService: \n  auth_service = AuthService()\n  return auth_service",
+        "detail": "src.services.auth_service",
+        "documentation": {}
+    },
+    {
+        "label": "ChatHistoryService",
+        "kind": 6,
+        "importPath": "src.services.chat_history_service",
+        "description": "src.services.chat_history_service",
+        "peekOfCode": "class ChatHistoryService:\n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self, repository: ChatHistoryRepository | None = None):\n    if not hasattr(self, \"initialized\"):\n      self.repository = repository or ChatHistoryRepository()\n      self.initialized = True",
+        "detail": "src.services.chat_history_service",
+        "documentation": {}
+    },
+    {
+        "label": "get_chat_history_service",
+        "kind": 2,
+        "importPath": "src.services.chat_history_service",
+        "description": "src.services.chat_history_service",
+        "peekOfCode": "def get_chat_history_service():\n  return ChatHistoryService()",
+        "detail": "src.services.chat_history_service",
+        "documentation": {}
+    },
+    {
         "label": "CollectionsService",
         "kind": 6,
         "importPath": "src.services.collections_service",
         "description": "src.services.collections_service",
         "peekOfCode": "class CollectionsService: \n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self, repository: CollectionsRepository | None = None):\n    if not hasattr(self, \"intialized\"):\n      self.repository = repository or CollectionsRepository()\n      self.initialized = True",
+        "detail": "src.services.collections_service",
+        "documentation": {}
+    },
+    {
+        "label": "get_collections_service",
+        "kind": 2,
+        "importPath": "src.services.collections_service",
+        "description": "src.services.collections_service",
+        "peekOfCode": "def get_collections_service(): \n  repository = CollectionsRepository()\n  service = CollectionsService(repository)\n  return service",
         "detail": "src.services.collections_service",
         "documentation": {}
     },
@@ -1709,11 +1948,29 @@
         "documentation": {}
     },
     {
+        "label": "get_document_service",
+        "kind": 2,
+        "importPath": "src.services.documents_service",
+        "description": "src.services.documents_service",
+        "peekOfCode": "def get_document_service():\n  repository = DocumentsRepository()\n  return DocumentsService(repository)",
+        "detail": "src.services.documents_service",
+        "documentation": {}
+    },
+    {
         "label": "UsersService",
         "kind": 6,
         "importPath": "src.services.users_service",
         "description": "src.services.users_service",
         "peekOfCode": "class UsersService: \n  _instance = None\n  def __new__(cls, *args, **kwargs):\n    if cls._instance is None:\n      cls._instance = super().__new__(cls)\n    return cls._instance\n  def __init__(self, repository: UsersRepository, auth_service: AuthService):\n    if not hasattr(self, \"initialized\"):\n      self.initialized = True\n      self.repository = repository or UsersRepository()",
+        "detail": "src.services.users_service",
+        "documentation": {}
+    },
+    {
+        "label": "get_users_service",
+        "kind": 2,
+        "importPath": "src.services.users_service",
+        "description": "src.services.users_service",
+        "peekOfCode": "def get_users_service() -> UsersService:\n  repository = UsersRepository()\n  auth_service = get_auth_service()\n  users_service = UsersService(repository=repository, auth_service=auth_service)\n  return users_service",
         "detail": "src.services.users_service",
         "documentation": {}
     },

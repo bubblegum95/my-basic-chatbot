@@ -1,11 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import JSONResponse
 from src.middlewares.jwt_middleware import get_current_user
-from src.repositories.users_repository import UsersRepository
 from src.schemas.create_user_dto import CreateUserDto
 from src.schemas.sign_in_dto import SignInDto
-from src.services.auth_service import AuthService
-from src.services.users_service import UsersService
+from src.services.users_service import UsersService, get_users_service
 
 
 users = APIRouter(
@@ -13,16 +11,6 @@ users = APIRouter(
   tags=["users"], 
   responses={404: {"description": "Not Found"}}
 )
-
-def get_auth_service() -> AuthService: 
-  auth_service = AuthService()
-  return auth_service
-
-def get_users_service() -> UsersService:
-  repository = UsersRepository()
-  auth_service = get_auth_service()
-  users_service = UsersService(repository=repository, auth_service=auth_service)
-  return users_service
 
 @users.post("/sign-up")
 async def sign_up(dto: CreateUserDto, service: UsersService = Depends(get_users_service)):

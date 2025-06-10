@@ -18,3 +18,8 @@ class DocumentsService:
   
   async def find_one(self, id: str):
     return await self.repository.find_one(id)
+  
+
+def get_document_service():
+  repository = DocumentsRepository()
+  return DocumentsService(repository)

@@ -7,4 +7,4 @@ class ChatHistory(Model):
   user_message = fields.TextField()
   chat_response = fields.TextField()
   created_at = fields.DatetimeField(auto_now_add=True)
-  collection = fields.ForeignKeyField(model_name="models.Collections", related_name="chat_history")
+  collection = fields.ForeignKeyField(model_name="models.Collections", related_name="chathistory")

@@ -1,6 +1,6 @@
 import bcrypt
 from src.repositories.users_repository import UsersRepository
-from src.services.auth_service import AuthService
+from src.services.auth_service import AuthService, get_auth_service
 
 
 class UsersService: 
@@ -43,3 +43,9 @@ class UsersService:
   
   async def modify_token(self, id: str, refresh_token: str):
     return await self.repository.modify_token(id=id, refresh_token=refresh_token)
+  
+def get_users_service() -> UsersService:
+  repository = UsersRepository()
+  auth_service = get_auth_service()
+  users_service = UsersService(repository=repository, auth_service=auth_service)
+  return users_service

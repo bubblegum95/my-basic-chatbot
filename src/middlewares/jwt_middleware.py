@@ -17,4 +17,5 @@ async def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(b
       detail="Invalid or expired token",
       headers={"WWW-Authenticate": "Bearer"},
     )
+
   return user_id

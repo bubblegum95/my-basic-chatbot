@@ -51,3 +51,8 @@ class AuthService:
         },
         status_code=400
       )
+
+
+def get_auth_service() -> AuthService: 
+  auth_service = AuthService()
+  return auth_service
